@@ -1,48 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prime 5 Electromechanical | Leading MEP Contractor Dubai</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+    <title>Rootistri - Authentic Italian Pasta</title>
     <style>
-        /* ═══════════════════════════════════════════════════════════════
-           COLOR PALETTE - DARK NAVY & CYAN THEME
-        ═══════════════════════════════════════════════════════════════ */
-        :root {
-            /* PRIMARY - Corporate Authority */
-            --primary: #0F172A;
-            --primary-light: #1E293B;
-            --primary-dark: #020617;
-
-            /* SECONDARY - Tech Accent */
-            --secondary: #06B6D4;
-            --secondary-light: #22D3EE;
-            --secondary-dark: #0891B2;
-
-            /* ACCENT */
-            --accent-blue: #3B82F6;
-            --accent-green: #10B981;
-
-            /* NEUTRALS */
-            --dark: #0F172A;
-            --gray: #64748B;
-            --light-gray: #F8FAFC;
-            --white: #FFFFFF;
-
-            /* GRADIENTS */
-            --gradient-primary: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
-            --gradient-secondary: linear-gradient(135deg, #06B6D4 0%, #0891B2 100%);
-            --gradient-hero: linear-gradient(135deg, rgba(15, 23, 42, 0.45) 0%, rgba(30, 41, 59, 0.40) 100%);
-        }
-
         * {
             margin: 0;
             padding: 0;
@@ -50,4214 +12,1120 @@
         }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #fff;
+            color: #333;
             overflow-x: hidden;
-            background: var(--white);
         }
 
-        /* ═══════════════════════════════════════════════════════════════
-           SCROLL ANIMATIONS
-        ═══════════════════════════════════════════════════════════════ */
-        .fade-in-up {
-            opacity: 0;
-            transform: translateY(40px);
-            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-        }
-
-        .fade-in-up.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .scale-in {
-            opacity: 0;
-            transform: scale(0.9);
-            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-        }
-
-        .scale-in.visible {
-            opacity: 1;
-            transform: scale(1);
-        }
-
-        /* Stagger animation delays */
-        .service-card:nth-child(1) {
-            transition-delay: 0.1s;
-        }
-
-        .service-card:nth-child(2) {
-            transition-delay: 0.2s;
-        }
-
-        .service-card:nth-child(3) {
-            transition-delay: 0.3s;
-        }
-
-        .service-card:nth-child(4) {
-            transition-delay: 0.4s;
-        }
-
-        .trust-item:nth-child(1) {
-            transition-delay: 0.1s;
-        }
-
-        .trust-item:nth-child(2) {
-            transition-delay: 0.2s;
-        }
-
-        .trust-item:nth-child(3) {
-            transition-delay: 0.3s;
-        }
-
-        .trust-item:nth-child(4) {
-            transition-delay: 0.4s;
-        }
-
-        /* ═══════════════════════════════════════════════════════════════
-           NAVIGATION
-        ═══════════════════════════════════════════════════════════════ */
+        /* Navigation */
         .navbar {
             position: fixed;
-            width: 100%;
             top: 0;
-            z-index: 1000;
-            background: rgba(15, 23, 42, 0.98);
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
-            padding: 0;
-            border-bottom: 1px solid rgba(6, 182, 212, 0.1);
+            padding: 1.2rem 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            z-index: 1000;
         }
 
         .nav-container {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 1rem 1.5rem;
+            padding: 0 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
         .logo {
-            font-family: 'Poppins', sans-serif;
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             font-weight: 700;
-            color: var(--white);
-            text-decoration: none;
-            z-index: 1001;
-            letter-spacing: -0.5px;
+            color: #d4521c;
         }
 
         .nav-menu {
-            display: none;
+            display: flex;
             list-style: none;
-            gap: 2.5rem;
-            align-items: center;
-        }
-
-        .nav-menu li {
-            position: relative;
+            gap: 2rem;
         }
 
         .nav-menu a {
-            color: rgba(255, 255, 255, 0.9);
             text-decoration: none;
+            color: #333;
             font-weight: 500;
-            font-size: 1rem;
-            padding: 0.5rem 0;
-            position: relative;
             transition: color 0.3s;
         }
 
         .nav-menu a:hover {
-            color: var(--secondary-light);
+            color: #d4521c;
         }
 
-        .nav-menu a.active {
-            color: var(--secondary);
-        }
-
-        .nav-menu a.active::after {
-            content: '';
-            position: absolute;
-            bottom: -0.5rem;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background: var(--gradient-secondary);
-        }
-
-        .nav-cta {
-            display: none;
-            background: var(--gradient-secondary);
-            color: var(--white);
-            padding: 0.8rem 2rem;
-            border-radius: 6px;
+        .cta-nav {
+            background: #d4521c;
+            color: white;
+            border: none;
+            padding: 0.8rem 1.8rem;
+            border-radius: 25px;
             font-weight: 600;
-            text-decoration: none;
-            transition: all 0.3s;
-            border: none;
-        }
-
-        .nav-cta:hover {
-            background: var(--secondary-dark);
-            transform: translateY(-2px);
-            box-shadow: 0 5px 20px rgba(6, 182, 212, 0.4);
-        }
-
-        .mobile-toggle {
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-            background: none;
-            border: none;
             cursor: pointer;
-            padding: 0.5rem;
-            z-index: 1001;
-            position: relative;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
 
-        .mobile-toggle span {
-            width: 25px;
-            height: 3px;
-            background: var(--secondary);
-            border-radius: 3px;
-            transition: all 0.3s ease;
-            display: block;
+        .cta-nav:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(212, 82, 28, 0.4);
         }
 
-        .mobile-toggle.active span:nth-child(1) {
-            transform: rotate(45deg) translate(7px, 7px);
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            padding: 120px 2rem 80px;
+            background: linear-gradient(135deg, #fef9f5 0%, #fff5e6 100%);
         }
 
-        .mobile-toggle.active span:nth-child(2) {
-            opacity: 0;
-        }
-
-        .mobile-toggle.active span:nth-child(3) {
-            transform: rotate(-45deg) translate(7px, -7px);
-        }
-
-        /* Mobile Sidebar */
-        .mobile-sidebar {
-            position: fixed;
-            top: 0;
-            right: -100%;
-            width: 80%;
-            max-width: 320px;
-            height: 100vh;
-            background: var(--primary);
-            z-index: 999;
-            transition: right 0.4s ease;
-            overflow-y: auto;
-            padding: 80px 0 2rem;
-            box-shadow: -5px 0 20px rgba(0, 0, 0, 0.5);
-            border-left: 1px solid rgba(6, 182, 212, 0.2);
-        }
-
-        .mobile-sidebar.active {
-            right: 0;
-        }
-
-        .sidebar-overlay {
-            position: fixed;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.7);
-            z-index: 998;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.3s ease, visibility 0.3s ease;
-        }
-
-        .sidebar-overlay.active {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .mobile-menu {
-            list-style: none;
-            padding: 0;
-        }
-
-        .mobile-menu li {
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        .mobile-menu a {
-            display: block;
-            color: rgba(255, 255, 255, 0.9);
-            text-decoration: none;
-            padding: 1rem 2rem;
-            font-weight: 500;
-            font-size: 1.05rem;
-            transition: all 0.3s;
-        }
-
-        .mobile-menu a:active,
-        .mobile-menu a.active {
-            background: rgba(6, 182, 212, 0.1);
-            color: var(--secondary);
-            padding-left: 2.5rem;
-            border-left: 3px solid var(--secondary);
-        }
-
-        .mobile-cta {
-            margin: 2rem;
-            display: block;
-            background: var(--gradient-secondary);
-            color: var(--white);
-            padding: 1rem;
-            border-radius: 8px;
-            font-weight: 700;
-            text-align: center;
-            text-decoration: none;
-            transition: all 0.3s;
-        }
-
-        .mobile-cta:active {
-            transform: scale(0.98);
-            background: var(--secondary-dark);
-        }
-
-        /* ═══════════════════════════════════════════════════════════════
-           HERO CAROUSEL
-        ═══════════════════════════════════════════════════════════════ */
-        .hero-slider {
-            position: relative;
-            height: 100vh;
-            overflow: hidden;
-            margin-top: 0;
-        }
-
-        .slides-container {
-            position: relative;
-            height: 100%;
-            width: 100%;
-        }
-
-        .slide {
-            position: absolute;
-            inset: 0;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
-            z-index: 0;
-        }
-
-        .slide.active {
-            opacity: 1;
-            visibility: visible;
-            z-index: 1;
-        }
-
-        .slide-bg {
-            position: absolute;
-            inset: 0;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            animation: subtleZoom 15s ease-in-out infinite;
-        }
-
-        @keyframes subtleZoom {
-
-            0%,
-            100% {
-                transform: scale(1);
-            }
-
-            50% {
-                transform: scale(1.05);
-            }
-        }
-
-        .slide-overlay {
-            position: absolute;
-            inset: 0;
-            background: var(--gradient-hero);
-            z-index: 1;
-        }
-
-        .slide-content {
-            position: absolute;
-            inset: 0;
-            z-index: 2;
-            display: flex;
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
             align-items: center;
-            justify-content: center;
-            padding: 6rem 1.5rem 3rem;
         }
 
-        .content-wrapper {
-            max-width: 900px;
-            text-align: center;
+        /* Hero Content */
+        .hero-content {
+            animation: fadeInLeft 1s ease-out;
         }
 
-        .slide-title {
-            font-family: 'Poppins', sans-serif;
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--white);
-            margin-bottom: 1rem;
-            line-height: 1.3;
-            letter-spacing: -0.02em;
-            text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
-        }
-
-        .title-underline {
-            width: 80px;
-            height: 3px;
-            background: var(--gradient-secondary);
-            margin: 0 auto 1.5rem;
-        }
-
-        .slide-description {
-            font-family: 'Inter', sans-serif;
-            font-size: 0.95rem;
-            color: rgba(255, 255, 255, 0.95);
-            line-height: 1.7;
-            margin-bottom: 2rem;
-            padding: 0 0.5rem;
-            font-weight: 400;
-            text-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
-        }
-
-        .slide-btn {
-            font-family: 'Inter', sans-serif;
-            background: var(--gradient-secondary);
-            color: var(--white);
-            padding: 0.9rem 2.5rem;
-            border-radius: 6px;
-            font-weight: 600;
-            font-size: 1rem;
-            text-decoration: none;
+        .hero-tag {
             display: inline-block;
+            background: #fff;
+            color: #d4521c;
+            padding: 0.5rem 1.2rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            color: #1a1a1a;
+        }
+
+        .highlight {
+            color: #d4521c;
+            position: relative;
+        }
+
+        .hero-description {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #666;
+            margin-bottom: 2rem;
+            max-width: 500px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .btn-primary, .btn-secondary {
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 30px;
+            cursor: pointer;
             transition: all 0.3s;
             border: 2px solid transparent;
         }
 
-        .slide-btn:active {
-            transform: scale(0.98);
+        .btn-primary {
+            background: #d4521c;
+            color: white;
+            border-color: #d4521c;
         }
 
-        .slider-nav {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            z-index: 3;
-            width: 100%;
-            pointer-events: none;
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(212, 82, 28, 0.4);
         }
 
-        .slider-nav-inner {
-            padding: 0 1rem;
+        .btn-secondary {
+            background: transparent;
+            color: #d4521c;
+            border-color: #d4521c;
+        }
+
+        .btn-secondary:hover {
+            background: #d4521c;
+            color: white;
+        }
+
+        .hero-stats {
             display: flex;
-            justify-content: space-between;
+            gap: 3rem;
         }
 
-        .nav-arrow {
-            width: 45px;
-            height: 45px;
-            background: rgba(6, 182, 212, 0.2);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(6, 182, 212, 0.4);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--secondary);
-            font-size: 1.1rem;
-            cursor: pointer;
-            transition: all 0.3s;
-            pointer-events: auto;
+        .stat h3 {
+            font-size: 2rem;
+            color: #d4521c;
+            margin-bottom: 0.3rem;
         }
 
-        .nav-arrow:active {
-            background: rgba(6, 182, 212, 0.4);
-            transform: scale(0.95);
+        .stat p {
+            font-size: 0.9rem;
+            color: #666;
         }
 
-        /* ═══════════════════════════════════════════════════════════════
-           HERO INITIAL LOAD ANIMATION
-        ═══════════════════════════════════════════════════════════════ */
-        @keyframes bgZoomIn {
-            0% {
-                transform: scale(1.2);
-            }
-
-            100% {
-                transform: scale(1);
-            }
-        }
-
-        @keyframes overlayFadeIn {
-            0% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-        @keyframes contentSpawn {
-            0% {
-                opacity: 0;
-                transform: translateY(60px) scale(0.95);
-            }
-
-            100% {
-                opacity: 1;
-                transform: translateY(0) scale(1);
-            }
-        }
-
-        @keyframes titleSpawn {
-            0% {
-                opacity: 0;
-                transform: translateY(40px);
-                filter: blur(8px);
-            }
-
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-                filter: blur(0);
-            }
-        }
-
-        @keyframes underlineExpand {
-            0% {
-                width: 0;
-                opacity: 0;
-            }
-
-            100% {
-                width: 80px;
-                opacity: 1;
-            }
-        }
-
-        @keyframes descriptionFade {
-            0% {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes buttonPop {
-            0% {
-                opacity: 0;
-                transform: scale(0.8);
-            }
-
-            50% {
-                transform: scale(1.05);
-            }
-
-            100% {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
-
-        @keyframes arrowFadeIn {
-            0% {
-                opacity: 0;
-                transform: scale(0.8);
-            }
-
-            100% {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
-
-        .slide[data-slide="1"].first-load .slide-bg {
-            animation: bgZoomIn 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-        }
-
-        .slide[data-slide="1"].first-load .slide-overlay {
-            opacity: 0;
-            animation: overlayFadeIn 1s ease-out 0.3s forwards;
-        }
-
-        .slide[data-slide="1"].first-load .content-wrapper {
-            opacity: 0;
-            animation: contentSpawn 1s cubic-bezier(0.4, 0, 0.2, 1) 0.5s forwards;
-        }
-
-        .slide[data-slide="1"].first-load .slide-title {
-            opacity: 0;
-            animation: titleSpawn 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.8s forwards;
-        }
-
-        .slide[data-slide="1"].first-load .title-underline {
-            opacity: 0;
-            animation: underlineExpand 0.6s ease-out 1.3s forwards;
-        }
-
-        .slide[data-slide="1"].first-load .slide-description {
-            opacity: 0;
-            animation: descriptionFade 0.8s ease-out 1.6s forwards;
-        }
-
-        .slide[data-slide="1"].first-load .slide-btn {
-            opacity: 0;
-            animation: buttonPop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 2s forwards;
-        }
-
-        .slider-nav.first-load {
-            opacity: 0;
-            animation: arrowFadeIn 0.6s ease-out 2.2s forwards;
-        }
-
-        /* ═══════════════════════════════════════════════════════════════
-           SERVICES SECTION - FIXED VERSION
-        ═══════════════════════════════════════════════════════════════ */
-        .services-section {
-            padding: 4rem 1.5rem;
-            background: var(--white);
+        /* Hero Image - Product Showcase */
+        .hero-image {
             position: relative;
+            animation: fadeInRight 1s ease-out;
         }
 
-        .services-container {
-            max-width: 1320px;
+        .product-showcase {
+            position: relative;
+            width: 550px;
+            height: 550px;
             margin: 0 auto;
-            position: relative;
-            z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
+        /* Orange Blob Background */
+        .blob-background {
+            position: absolute;
+            width: 480px;
+            height: 480px;
+            background: linear-gradient(135deg, #ffb088 0%, #ff8c5a 50%, #d4521c 100%);
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            z-index: 1;
+            animation: blobMorph 10s ease-in-out infinite;
+            box-shadow: 0 20px 50px rgba(212, 82, 28, 0.25);
+        }
+
+        @keyframes blobMorph {
+            0%, 100% { 
+                border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            }
+            25% { 
+                border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%;
+            }
+            50% { 
+                border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%;
+            }
+            75% { 
+                border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%;
+            }
+        }
+
+        /* Main Center Product */
+        .product-main {
+            position: relative;
+            z-index: 3;
+            width: 320px;
+            height: 450px;
+            animation: floatMain 4s ease-in-out infinite;
+        }
+
+        .product-main img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            filter: drop-shadow(0 25px 50px rgba(0, 0, 0, 0.2));
+        }
+
+        /* Side Products */
+        .product-side {
+            position: absolute;
+            width: 190px;
+            height: 270px;
+            z-index: 2;
+            cursor: pointer;
+            transition: all 0.4s ease;
+        }
+
+        .product-side img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.15));
+        }
+
+        .product-side:hover {
+            transform: scale(1.15);
+            z-index: 4;
+        }
+
+        .product-left {
+            left: -60px;
+            top: 50%;
+            transform: translateY(-50%) scale(0.85);
+            animation: floatLeft 4s ease-in-out infinite;
+            animation-delay: 0.5s;
+        }
+
+        .product-left:hover {
+            transform: translateY(-50%) scale(1);
+        }
+
+        .product-right {
+            right: -60px;
+            top: 50%;
+            transform: translateY(-50%) scale(0.85);
+            animation: floatRight 4s ease-in-out infinite;
+            animation-delay: 1s;
+        }
+
+        .product-right:hover {
+            transform: translateY(-50%) scale(1);
+        }
+
+        /* Animations */
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes floatMain {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        @keyframes floatLeft {
+            0%, 100% { transform: translateY(-50%) scale(0.85); }
+            50% { transform: translateY(-55%) scale(0.85); }
+        }
+
+        @keyframes floatRight {
+            0%, 100% { transform: translateY(-50%) scale(0.85); }
+            50% { transform: translateY(-45%) scale(0.85); }
+        }
+
+        /* Rootistri Section */
+        .rootistri-section {
+            padding: 100px 2rem;
+            background: linear-gradient(180deg, #fff 0%, #fef9f5 50%, #fff 100%);
+            overflow: hidden;
+        }
+
+        .rootistri-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Section Header */
         .section-header {
             text-align: center;
-            margin-bottom: 3rem;
+            margin-bottom: 5rem;
         }
 
         .section-label {
             display: inline-block;
-            font-size: 0.8rem;
-            font-weight: 700;
-            color: var(--secondary);
-            letter-spacing: 0.15em;
+            font-size: 0.85rem;
+            color: #d4521c;
             text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 700;
             margin-bottom: 1rem;
         }
 
         .section-title {
-            font-family: 'Poppins', sans-serif;
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--dark);
-            margin-bottom: 1rem;
-            line-height: 1.3;
+            font-size: 3.5rem;
+            color: #1a1a1a;
+            font-weight: 800;
+            letter-spacing: -2px;
         }
 
-        .section-subtitle {
-            font-size: 1rem;
-            color: var(--gray);
-            max-width: 700px;
-            margin: 0 auto;
-            line-height: 1.7;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 2rem;
-        }
-
-        .service-card {
+        /* Timeline Cards */
+        .story-timeline {
             position: relative;
-            padding: 2.5rem 1.5rem;
-            border-radius: 16px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.4s ease;
-            overflow: hidden;
-            min-height: 450px;
-            display: flex;
-            flex-direction: column;
+            padding: 2rem 0;
         }
 
-        /* Background Image Layer */
-        .service-card::before {
+        .story-timeline::before {
             content: '';
             position: absolute;
-            inset: 0;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            z-index: 0;
-            transition: transform 0.6s ease;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(180deg, transparent, #d4521c, transparent);
+            transform: translateX(-50%);
         }
 
-        /* Dark Overlay */
-        .service-card::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(135deg, rgba(15, 23, 42, 0.85) 0%, rgba(30, 41, 59, 0.80) 100%);
-            z-index: 1;
-            transition: all 0.4s ease;
+        .timeline-card {
+            display: grid;
+            grid-template-columns: 1fr 80px 1fr;
+            gap: 3rem;
+            margin-bottom: 4rem;
+            align-items: center;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease;
         }
 
-        /* Hover Effects */
-        .service-card:hover::before {
-            transform: scale(1.1);
+        .timeline-card.reverse {
+            direction: rtl;
         }
 
-        .service-card:hover::after {
-            background: linear-gradient(135deg, rgba(15, 23, 42, 0.75) 0%, rgba(30, 41, 59, 0.70) 100%);
+        .timeline-card.reverse > * {
+            direction: ltr;
         }
 
-        .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 25px 60px rgba(15, 23, 42, 0.4);
-            border-color: var(--secondary);
+        .timeline-card.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
 
-        /* Content Wrapper - FIXED */
-        .service-content {
+        /* Card Number */
+        .card-number {
+            font-size: 6rem;
+            font-weight: 800;
+            color: rgba(212, 82, 28, 0.1);
+            text-align: right;
+            line-height: 1;
+        }
+
+        .timeline-card.reverse .card-number {
+            text-align: left;
+        }
+
+        /* Visual Circle */
+        .card-visual {
             position: relative;
             z-index: 2;
-            display: flex;
-            flex-direction: column;
-            flex: 1;
         }
 
-        .service-icon {
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(135deg, rgba(6, 182, 212, 0.2) 0%, rgba(8, 145, 178, 0.2) 100%);
-            backdrop-filter: blur(10px);
-            border-radius: 12px;
+        .visual-circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--secondary-light);
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
-            transition: all 0.4s ease;
-            border: 1px solid rgba(6, 182, 212, 0.3);
-        }
-
-        .service-card:hover .service-icon {
-            background: var(--gradient-secondary);
-            color: var(--white);
-            transform: scale(1.15) rotate(5deg);
-            border-color: var(--secondary);
-            box-shadow: 0 8px 20px rgba(6, 182, 212, 0.4);
-        }
-
-        .service-title {
-            font-family: 'Poppins', sans-serif;
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: var(--white);
-            margin-bottom: 1rem;
-            text-shadow: 0 2px 15px rgba(0, 0, 0, 0.6);
-            letter-spacing: -0.02em;
-        }
-
-        .service-description {
-            font-size: 0.95rem;
-            color: rgba(255, 255, 255, 0.95);
-            line-height: 1.7;
-            margin-bottom: 1.5rem;
-            text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
-            flex: 1;
-        }
-
-        .service-features {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            margin-top: auto;
-        }
-
-        .service-features li {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            font-size: 0.9rem;
-            color: rgba(255, 255, 255, 0.9);
-            margin-bottom: 0.8rem;
-            padding-left: 0.5rem;
-            text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
-        }
-
-        .service-features li:last-child {
-            margin-bottom: 0;
-        }
-
-        .service-features i {
-            color: var(--secondary-light);
-            font-size: 0.85rem;
-            flex-shrink: 0;
-            filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.5));
-        }
-
-        /* Individual Card Background Images */
-        .service-card:nth-child(1)::before {
-            background-image: url('https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=1200&h=800&fit=crop&q=80');
-        }
-
-        .service-card:nth-child(2)::before {
-            background-image: url('https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&h=800&fit=crop&q=80');
-        }
-
-        .service-card:nth-child(3)::before {
-            background-image: url('https://images.unsplash.com/photo-1607400201889-565b1ee75f8e?w=1200&h=800&fit=crop&q=80');
-        }
-
-        .service-card:nth-child(4)::before {
-            background-image: url('https://images.unsplash.com/photo-1563453392212-326f5e854473?w=1200&h=800&fit=crop&q=80');
-        }
-
-        /* ═══════════════════════════════════════════════════════════════
-   STATS SECTION - OPTION 2 (Background Image with Parallax)
-═══════════════════════════════════════════════════════════════ */
-        .stats-section-v2 {
-            padding: 6rem 1.5rem;
-            background: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&h=800&fit=crop&q=80') center/cover no-repeat;
-            background-attachment: fixed;
-            /* PARALLAX EFFECT */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
             position: relative;
-            color: var(--white);
-            overflow: hidden;
         }
 
-        .stats-overlay-v2 {
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(135deg, rgba(71, 85, 105, 0.92) 0%, rgba(100, 116, 139, 0.88) 100%);
-            z-index: 1;
+        .visual-circle.orange {
+            background: linear-gradient(135deg, #d4521c, #ff6b35);
         }
 
-        .stats-section-v2 .stats-container {
-            position: relative;
-            z-index: 2;
-            max-width: 1320px;
-            margin: 0 auto;
+        .visual-circle.blue {
+            background: linear-gradient(135deg, #4a90e2, #5ca9fb);
         }
 
-        .stats-header-v2 {
-            text-align: center;
-            margin-bottom: 4rem;
-            animation: fadeInUp 1s ease-out;
+        .visual-circle.green {
+            background: linear-gradient(135deg, #27ae60, #2ecc71);
         }
 
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        .visual-circle.red {
+            background: linear-gradient(135deg, #e74c3c, #ff6b6b);
         }
 
-        .stats-title-v2 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 2rem;
-            font-weight: 800;
-            color: var(--white);
-            line-height: 1.4;
-            margin: 0;
-        }
-
-        .stats-title-v2 i {
-            color: var(--secondary);
-            margin-right: 0.5rem;
+        .visual-icon {
             font-size: 2.5rem;
-            vertical-align: middle;
         }
 
-        .highlight-text {
-            display: block;
-            color: var(--white);
-            margin-top: 0.5rem;
+        .visual-circle::before {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border: 3px dashed currentColor;
+            border-radius: 50%;
+            opacity: 0.3;
+            animation: rotate 20s linear infinite;
         }
 
-        .stats-grid-v2 {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 3rem;
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
         }
 
-        .stat-item-v2 {
-            text-align: center;
-            padding: 0;
-            transition: transform 0.3s ease;
+        /* Card Content */
+        .card-content {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 25px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
         }
 
-        .stat-item-v2:hover {
+        .card-content:hover {
             transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(212, 82, 28, 0.2);
         }
 
-        .stat-number-v2 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 4rem;
-            font-weight: 800;
-            color: var(--white);
+        .card-content h3 {
+            font-size: 1.5rem;
+            color: #d4521c;
             margin-bottom: 1rem;
-            line-height: 1;
-            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            font-weight: 700;
         }
 
-        .stat-label-v2 {
-            font-size: 1.2rem;
-            color: var(--white);
-            font-weight: 600;
-            text-transform: capitalize;
-            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        .card-content p {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: #666;
         }
 
-        /* Mobile - Disable parallax for better performance */
+        /* Section CTA */
+        .section-cta {
+            text-align: center;
+            margin-top: 4rem;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .section-cta.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Scroll Animation Base */
+        .scroll-animate {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease;
+        }
+
+        .scroll-animate.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive Design */
         @media (max-width: 768px) {
-            .stats-section-v2 {
-                background-attachment: scroll;
+            .nav-menu {
+                display: none;
             }
-        }
-
-        @media (min-width: 640px) {
-            .stats-grid-v2 {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 3rem;
+            
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
             }
-        }
-
-        @media (min-width: 768px) {
-            .stats-section-v2 {
-                padding: 8rem 2rem;
+            
+            .hero-title {
+                font-size: 2.5rem;
             }
-
-            .stats-title-v2 {
-                font-size: 2.8rem;
+            
+            .hero-buttons {
+                justify-content: center;
+                flex-direction: column;
             }
-
-            .stats-title-v2 i {
-                font-size: 3rem;
+            
+            .hero-stats {
+                justify-content: center;
             }
-
-            .stats-grid-v2 {
-                grid-template-columns: repeat(4, 1fr);
-                gap: 4rem;
+            
+            .product-showcase {
+                width: 380px;
+                height: 380px;
             }
 
-            .stat-number-v2 {
-                font-size: 5rem;
-            }
-        }
-
-        @media (min-width: 1025px) {
-            .stats-section-v2 {
-                padding: 10rem 3rem;
+            .blob-background {
+                width: 320px;
+                height: 320px;
             }
 
-            .stats-title-v2 {
-                font-size: 3.5rem;
+            .product-main {
+                width: 220px;
+                height: 300px;
             }
 
-            .stats-title-v2 i {
-                font-size: 3.5rem;
+            .product-side {
+                display: none;
             }
 
-            .stat-number-v2 {
-                font-size: 6rem;
+            .story-timeline::before {
+                left: 40px;
             }
 
-            .stat-label-v2 {
-                font-size: 1.3rem;
-            }
-        }
-
-        /* ═══════════════════════════════════════════════════════════════
-           RESPONSIVE
-        ═══════════════════════════════════════════════════════════════ */
-        @media (min-width: 640px) {
-            .trust-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (min-width: 768px) {
-            .logo {
-                font-size: 1.8rem;
+            .timeline-card {
+                grid-template-columns: 80px 1fr;
+                gap: 1.5rem;
             }
 
-            .slide-title {
-                font-size: 3.5rem;
-                line-height: 1.25;
+            .card-number {
+                display: none;
             }
 
-            .slide-description {
-                font-size: 1.1rem;
-            }
-
-            .title-underline {
-                width: 100px;
-                height: 4px;
-            }
-
-            .slide-content {
-                padding: 8rem 2rem 3rem;
-            }
-
-            .nav-arrow {
-                width: 50px;
-                height: 50px;
-                font-size: 1.2rem;
-            }
-
-            .slider-nav-inner {
-                padding: 0 2rem;
-            }
-
-            .services-section {
-                padding: 5rem 2rem;
+            .timeline-card.reverse {
+                direction: ltr;
             }
 
             .section-title {
                 font-size: 2.5rem;
             }
 
-            .section-subtitle {
-                font-size: 1.1rem;
+            .section-cta {
+                flex-direction: column;
+                align-items: center;
             }
 
-            .services-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 2.5rem;
-            }
-
-            .service-card {
-                padding: 2.5rem 2rem;
-                min-height: 480px;
-            }
-
-            .service-icon {
-                width: 70px;
-                height: 70px;
-                font-size: 1.7rem;
-            }
-
-            .service-title {
-                font-size: 1.5rem;
-            }
-
-            .service-description {
-                font-size: 1rem;
-            }
-
-            .trust-section {
-                margin-top: 5rem;
-                padding: 4rem 2rem;
-            }
-
-            .trust-item {
-                padding: 2.5rem 2rem;
-            }
-
-            .trust-item i {
-                font-size: 3rem;
-            }
-
-            .trust-item h4 {
-                font-size: 1.4rem;
-            }
-
-            .trust-item p {
-                font-size: 1rem;
-            }
-
-            @keyframes underlineExpand {
-                0% {
-                    width: 0;
-                    opacity: 0;
-                }
-
-                100% {
-                    width: 100px;
-                    opacity: 1;
-                }
+            .btn-primary, .btn-secondary {
+                width: 100%;
+                max-width: 300px;
             }
         }
-
-        @media (min-width: 1025px) {
-            .nav-menu {
-                display: flex;
-            }
-
-            .nav-cta {
-                display: inline-block;
-            }
-
-            .mobile-toggle {
-                display: none;
-            }
-
-            .slide-title {
-                font-size: 4.5rem;
-                line-height: 1.2;
-            }
-
-            .slide-description {
-                font-size: 1.15rem;
-            }
-
-            .title-underline {
-                width: 120px;
-            }
-
-            .slide-content {
-                padding: 10rem 3rem 4rem;
-            }
-
-            .nav-arrow:hover {
-                background: rgba(6, 182, 212, 0.3);
-                border-color: var(--secondary-light);
-                transform: scale(1.1);
-            }
-
-            .slide-btn:hover {
-                background: var(--secondary-dark);
-                transform: translateY(-3px);
-                box-shadow: 0 10px 30px rgba(6, 182, 212, 0.5);
-            }
-
-            .services-section {
-                padding: 6rem 3rem;
-            }
-
-            .section-title {
-                font-size: 3rem;
-            }
-
-            .services-grid {
-                gap: 3rem;
-            }
-
-            .service-card {
-                padding: 3rem 2.5rem;
-                min-height: 500px;
-            }
-
-            .service-icon {
-                width: 75px;
-                height: 75px;
-                font-size: 1.8rem;
-            }
-
-            .service-title {
-                font-size: 1.6rem;
-            }
-
-            .service-description {
-                font-size: 1.05rem;
-            }
-
-            .service-features li {
-                font-size: 0.95rem;
-            }
-
-            .trust-section {
-                margin-top: 6rem;
-                padding: 5rem 3rem;
-            }
-
-            .trust-grid {
-                grid-template-columns: repeat(4, 1fr);
-                gap: 2.5rem;
-            }
-
-            .trust-item {
-                padding: 3rem 2rem;
-            }
-
-            @keyframes underlineExpand {
-                0% {
-                    width: 0;
-                    opacity: 0;
-                }
-
-                100% {
-                    width: 120px;
-                    opacity: 1;
-                }
-            }
-        }
-
-        /* ═══════════════════════════════════════════════════════════════
-   ABOUT SECTION
-═══════════════════════════════════════════════════════════════ */
-        .about-section {
-            padding: 6rem 1.5rem;
-            background: var(--light-gray);
-        }
-
-        .about-container {
-            max-width: 1320px;
-            margin: 0 auto;
-        }
-
-        .about-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 3rem;
-            align-items: center;
-        }
-
-        .about-image {
-            position: relative;
-            border-radius: 16px;
-            overflow: hidden;
-        }
-
-        .about-image img {
-            width: 100%;
-            height: auto;
-            display: block;
-            border-radius: 16px;
-        }
-
-        .about-badge {
-            position: absolute;
-            bottom: 2rem;
-            right: 2rem;
-            background: var(--gradient-secondary);
-            padding: 1.5rem 2rem;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-        }
-
-        .badge-icon {
-            width: 50px;
-            height: 50px;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            color: var(--dark);
-        }
-
-        .badge-text strong {
-            display: block;
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: var(--dark);
-            margin-bottom: 0.2rem;
-        }
-
-        .badge-text span {
-            font-size: 0.9rem;
-            color: var(--dark);
-            opacity: 0.8;
-        }
-
-        .about-content {
-            padding: 0;
-        }
-
-        .about-text {
-            font-size: 1rem;
-            color: var(--gray);
-            line-height: 1.8;
-            margin-bottom: 1.5rem;
-        }
-
-        .about-features {
-            margin: 2rem 0;
-        }
-
-        .feature-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .feature-item:last-child {
-            margin-bottom: 0;
-        }
-
-        .feature-item i {
-            color: var(--secondary);
-            font-size: 1.5rem;
-            flex-shrink: 0;
-            margin-top: 0.2rem;
-        }
-
-        .feature-item strong {
-            display: block;
-            font-size: 1.1rem;
-            color: var(--dark);
-            margin-bottom: 0.3rem;
-        }
-
-        .feature-item p {
-            font-size: 0.9rem;
-            color: var(--gray);
-            margin: 0;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background: var(--gradient-primary);
-            color: var(--white);
-            padding: 1rem 2.5rem;
-            border-radius: 8px;
-            font-weight: 700;
-            text-decoration: none;
-            transition: all 0.3s;
-            margin-top: 1rem;
-        }
-
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(30, 64, 175, 0.4);
-        }
-
-        .cta-button:active {
-            transform: translateY(-1px);
-        }
-/* ═══════════════════════════════════════════════════════════════
-   TRANSFORMATION CAROUSEL - WIDE CINEMATIC
-═══════════════════════════════════════════════════════════════ */
-.trans-carousel-section {
-    padding: 6rem 0; /* Removed side padding to allow full width feel */
-    background: var(--white);
-    color: var(--dark);
+        /* Product Features Section */
+.product-features-section {
+    padding: 80px 2rem;
+    background: linear-gradient(135deg, #fef9f5 0%, #fff 50%, #fff5e6 100%);
     overflow: hidden;
 }
 
-/* Header stays contained */
-.trans-header-container {
+.features-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1.5rem;
+}
+
+.section-title {
     text-align: center;
-}
-
-/* Wide Wrapper for Carousel */
-.trans-wide-wrapper {
-    position: relative;
-    width: 100%;
-    max-width: 1600px; /* Much wider max-width */
-    margin: 3rem auto 0;
-    padding: 0 1.5rem; /* Small padding on mobile */
-}
-
-/* SLIDES CONTAINER - Taller for visual impact */
-.trans-slides-container {
-    width: 100%;
-    position: relative;
-    height: 600px; /* Increased height */
-}
-
-/* INDIVIDUAL SLIDE */
-.trans-slide {
-    position: absolute;
-    inset: 0;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-    display: flex;
-    justify-content: center;
-    transform: scale(0.95); /* Slight scale down when inactive */
-}
-
-.trans-slide.active {
-    opacity: 1;
-    visibility: visible;
-    z-index: 2;
-    transform: scale(1); /* Full scale when active */
-}
-
-/* WIDE CARD STYLING */
-.wide-card {
-    background: var(--white);
-    border-radius: 24px;
-    overflow: hidden;
-    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15); /* Stronger shadow */
-    border: 1px solid #e2e8f0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-/* VIEWER - Takes up most space */
-.compare-viewer {
-    position: relative;
-    width: 100%;
-    height: 100%; /* Fill available height */
-    flex: 1; /* Pushes info down */
-    overflow: hidden;
-    cursor: col-resize;
-}
-
-/* IMAGE LAYERS */
-.img-layer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.img-layer img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    pointer-events: none;
-}
-
-.img-layer.before {
-    width: 50%;
-    z-index: 2;
-    border-right: 3px solid var(--secondary);
-    box-shadow: 5px 0 20px rgba(0,0,0,0.3); /* Shadow on the cut line */
-}
-
-/* LABELS - More modern look */
-.label {
-    position: absolute;
-    top: 1.5rem;
-    padding: 0.5rem 1rem;
-    font-size: 0.8rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border-radius: 8px;
-    pointer-events: none;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    backdrop-filter: blur(8px);
-}
-
-.label-mep {
-    left: 1.5rem;
-    background: var(--secondary);
-    color: var(--white);
-}
-
-.label-finished {
-    right: 1.5rem;
-    background: rgba(255, 255, 255, 0.95);
-    color: var(--dark);
-}
-
-/* DRAG HANDLE */
-.handle {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    width: 60px; /* Wider touch area */
-    transform: translateX(-50%);
-    z-index: 10;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    pointer-events: none;
-}
-
-.handle-line {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: rgba(255, 255, 255, 0.5);
-}
-
-.handle-circle {
-    width: 48px;
-    height: 48px;
-    background: var(--white);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--secondary);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    z-index: 2;
-    font-size: 1.2rem;
-}
-
-/* WIDE INFO BAR */
-.trans-info-wide {
-    padding: 1.5rem 2.5rem;
-    background: var(--white);
-    border-top: 1px solid #f1f5f9;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.trans-info-wide h3 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--dark);
-    margin-bottom: 0.3rem;
-}
-
-.trans-info-wide p {
-    font-size: 1rem;
-    color: var(--gray);
-    margin: 0;
-}
-
-.info-meta {
-    display: flex;
-    gap: 2rem;
-}
-
-.info-meta span {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-weight: 600;
-    color: var(--secondary-dark);
-    font-size: 0.95rem;
-}
-
-/* NAVIGATION BUTTONS - Floating outside card */
-.carousel-nav {
-    background: var(--white);
-    border: none;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 1.4rem;
-    color: var(--dark);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-    z-index: 20;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.carousel-nav:hover {
-    background: var(--secondary);
-    color: var(--white);
-    transform: translateY(-50%) scale(1.1);
-}
-
-.nav-left { left: 10px; }
-.nav-right { right: 10px; }
-
-/* DOTS INDICATOR */
-.carousel-dots {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 2rem;
-}
-
-.dot {
-    width: 12px;
-    height: 12px;
-    background: #cbd5e1;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.dot.active {
-    background: var(--secondary);
-    width: 30px;
-    border-radius: 20px;
-}
-
-/* RESPONSIVE */
-@media (max-width: 1024px) {
-    .trans-slides-container { height: 500px; }
-    .trans-info-wide {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
-        padding: 1.5rem;
-    }
-    .info-meta { width: 100%; justify-content: space-between; }
-}
-
-@media (max-width: 768px) {
-    .trans-slides-container { height: 450px; }
-    .nav-left, .nav-right {
-        width: 40px; height: 40px; font-size: 1rem;
-        background: rgba(255,255,255,0.9);
-        top: 40%; /* Move up slightly to avoid text overlap */
-    }
-    .nav-left { left: 0; }
-    .nav-right { right: 0; }
-    .trans-wide-wrapper { padding: 0 1rem; }
-    .compare-viewer { height: 280px; } /* Shrink image area on mobile */
-}
-
-
-/* ═══════════════════════════════════════════════════════════════
-   TESTIMONIALS SECTION
-═══════════════════════════════════════════════════════════════ */
-        .testimonials-section {
-            padding: 6rem 1.5rem;
-            background: var(--white);
-        }
-
-        .testimonials-container {
-            max-width: 1320px;
-            margin: 0 auto;
-        }
-
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 2rem;
-        }
-
-        .testimonial-card {
-            background: var(--light-gray);
-            padding: 2.5rem;
-            border-radius: 16px;
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
-        }
-
-        .testimonial-card:hover {
-            transform: translateY(-8px);
-            border-color: var(--secondary);
-            box-shadow: 0 15px 40px rgba(30, 64, 175, 0.1);
-        }
-
-        .testimonial-rating {
-            margin-bottom: 1.5rem;
-        }
-
-        .testimonial-rating i {
-            color: var(--secondary);
-            font-size: 1.2rem;
-            margin-right: 0.3rem;
-        }
-
-        .testimonial-text {
-            font-size: 1.05rem;
-            color: var(--dark);
-            line-height: 1.8;
-            margin-bottom: 2rem;
-            font-style: italic;
-        }
-
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .testimonial-author img {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid var(--secondary);
-        }
-
-        .testimonial-author strong {
-            display: block;
-            font-size: 1.1rem;
-            color: var(--dark);
-            margin-bottom: 0.3rem;
-        }
-
-        .testimonial-author span {
-            font-size: 0.9rem;
-            color: var(--gray);
-        }
-
-        /* ═══════════════════════════════════════════════════════════════
-   TESTIMONIALS SECTION - CONTINUOUS SCROLL
-═══════════════════════════════════════════════════════════════ */
-        .testimonials-section {
-            padding: 6rem 1.5rem;
-            background: var(--white);
-            overflow: hidden;
-        }
-
-        .testimonials-container {
-            max-width: 100%;
-            margin: 0 auto;
-        }
-
-        .section-header {
-            max-width: 1320px;
-            margin: 0 auto 4rem;
-        }
-
-        .testimonials-slider-wrapper {
-            position: relative;
-            overflow: hidden;
-            padding: 2rem 0;
-        }
-
-        .testimonials-slider {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-        }
-
-        .testimonials-row {
-            display: flex;
-            gap: 2rem;
-            width: fit-content;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
-        }
-
-        /* Row 1 - Scrolls Left */
-        .testimonials-row-1 {
-            animation: scrollLeft 40s linear infinite;
-        }
-
-        /* Row 2 - Scrolls Right */
-        .testimonials-row-2 {
-            animation: scrollRight 40s linear infinite;
-        }
-
-        @keyframes scrollLeft {
-            0% {
-                transform: translateX(0);
-            }
-
-            100% {
-                transform: translateX(-50%);
-            }
-        }
-
-        @keyframes scrollRight {
-            0% {
-                transform: translateX(-50%);
-            }
-
-            100% {
-                transform: translateX(0);
-            }
-        }
-
-        /* Pause animation on hover */
-        .testimonials-row:hover {
-            animation-play-state: paused;
-        }
-
-        .testimonial-card-slider {
-            min-width: 380px;
-            max-width: 380px;
-            background: linear-gradient(135deg, rgba(30, 64, 175, 0.05) 0%, rgba(59, 130, 246, 0.05) 100%);
-            backdrop-filter: blur(10px);
-            padding: 2rem;
-            border-radius: 16px;
-            border: 1px solid rgba(30, 64, 175, 0.1);
-            transition: all 0.3s ease;
-            flex-shrink: 0;
-        }
-
-        .testimonial-card-slider:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 15px 40px rgba(30, 64, 175, 0.15);
-            border-color: var(--secondary);
-            background: linear-gradient(135deg, rgba(30, 64, 175, 0.08) 0%, rgba(59, 130, 246, 0.08) 100%);
-        }
-
-        .testimonial-header {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin-bottom: 1.5rem;
-            position: relative;
-        }
-
-        .testimonial-header img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 2px solid var(--secondary);
-        }
-
-        .testimonial-header div {
-            flex: 1;
-        }
-
-        .testimonial-header strong {
-            display: block;
-            font-size: 1rem;
-            font-weight: 700;
-            color: var(--dark);
-            margin-bottom: 0.2rem;
-        }
-
-        .testimonial-header span {
-            font-size: 0.85rem;
-            color: var(--gray);
-        }
-
-        .verify-icon {
-            color: var(--primary);
-            font-size: 1.1rem;
-            margin-left: auto;
-        }
-
-        .testimonial-text {
-            font-size: 0.95rem;
-            color: var(--dark);
-            line-height: 1.7;
-            margin: 0;
-        }
-
-        /* Mobile Responsive */
-        @media (max-width: 640px) {
-            .testimonial-card-slider {
-                min-width: 300px;
-                max-width: 300px;
-                padding: 1.5rem;
-            }
-
-            .testimonials-row-1,
-            .testimonials-row-2 {
-                animation-duration: 30s;
-            }
-        }
-
-        @media (min-width: 768px) {
-            .testimonials-section {
-                padding: 8rem 2rem;
-            }
-
-            .testimonial-card-slider {
-                min-width: 420px;
-                max-width: 420px;
-            }
-        }
-
-        @media (min-width: 1025px) {
-            .testimonials-section {
-                padding: 8rem 3rem;
-            }
-
-            .testimonial-card-slider {
-                min-width: 450px;
-                max-width: 450px;
-            }
-
-            .testimonials-row-1,
-            .testimonials-row-2 {
-                animation-duration: 50s;
-            }
-        }
-
-        /* ═══════════════════════════════════════════════════════════════
-   CONTACT SECTION
-═══════════════════════════════════════════════════════════════ */
-        .contact-section {
-            padding: 6rem 1.5rem;
-            background: var(--light-gray);
-        }
-
-        .contact-container {
-            max-width: 1320px;
-            margin: 0 auto;
-        }
-
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 3rem;
-        }
-
-        .contact-info {
-            padding: 0;
-        }
-
-        .contact-text {
-            font-size: 1rem;
-            color: var(--gray);
-            line-height: 1.8;
-            margin-bottom: 2rem;
-        }
-
-        .contact-details {
-            margin-bottom: 2rem;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 1.5rem;
-            margin-bottom: 2rem;
-        }
-
-        .contact-item:last-child {
-            margin-bottom: 0;
-        }
-
-        .contact-icon {
-            width: 50px;
-            height: 50px;
-            background: var(--gradient-primary);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.3rem;
-            color: var(--white);
-            flex-shrink: 0;
-        }
-
-        .contact-item strong {
-            display: block;
-            font-size: 1.1rem;
-            color: var(--dark);
-            margin-bottom: 0.4rem;
-        }
-
-        .contact-item p {
-            font-size: 0.95rem;
-            color: var(--gray);
-            margin: 0;
-        }
-
-        .social-links {
-            display: flex;
-            gap: 1rem;
-            margin-top: 2rem;
-        }
-
-        .social-icon {
-            width: 45px;
-            height: 45px;
-            background: var(--primary);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--white);
-            font-size: 1.1rem;
-            text-decoration: none;
-            transition: all 0.3s;
-        }
-
-        .social-icon:hover {
-            background: var(--gradient-secondary);
-            color: var(--dark);
-            transform: translateY(-5px);
-        }
-
-        .contact-form-wrapper {
-            background: var(--white);
-            padding: 2.5rem;
-            border-radius: 16px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-        }
-
-        .contact-form {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-
-        .form-group {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-            padding: 1rem 1.5rem;
-            border: 2px solid #e5e7eb;
-            border-radius: 8px;
-            font-size: 1rem;
-            font-family: 'Inter', sans-serif;
-            transition: all 0.3s;
-            background: var(--white);
-        }
-
-        .form-group input:focus,
-        .form-group select:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: var(--primary);
-            box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
-        }
-
-        .form-group textarea {
-            resize: vertical;
-            min-height: 120px;
-        }
-
-        .contact-form .cta-button {
-            margin-top: 0;
-            cursor: pointer;
-            border: none;
-            width: 100%;
-        }
-
-        /* ═══════════════════════════════════════════════════════════════
-   FOOTER
-═══════════════════════════════════════════════════════════════ */
-        .footer {
-            background: var(--gradient-primary);
-            color: var(--white);
-            padding: 4rem 1.5rem 2rem;
-        }
-
-        .footer-container {
-            max-width: 1320px;
-            margin: 0 auto;
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 3rem;
-            margin-bottom: 3rem;
-        }
-
-        .footer-logo {
-            font-family: 'Poppins', sans-serif;
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--white);
-            margin-bottom: 1rem;
-        }
-
-        .footer-text {
-            font-size: 0.95rem;
-            color: rgba(255, 255, 255, 0.8);
-            line-height: 1.7;
-            margin-bottom: 1.5rem;
-        }
-
-        .footer-certifications {
-            display: flex;
-            gap: 1rem;
-            margin-top: 1.5rem;
-        }
-
-        .footer-certifications img {
-            height: 60px;
-            width: auto;
-            border-radius: 8px;
-        }
-
-        .footer-title {
-            font-family: 'Poppins', sans-serif;
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: var(--white);
-            margin-bottom: 1.5rem;
-        }
-
-        .footer-links {
-            list-style: none;
-            padding: 0;
-        }
-
-        .footer-links li {
-            margin-bottom: 0.8rem;
-        }
-
-        .footer-links a {
-            color: rgba(255, 255, 255, 0.8);
-            text-decoration: none;
-            font-size: 0.95rem;
-            transition: all 0.3s;
-            display: inline-block;
-        }
-
-        .footer-links a:hover {
-            color: var(--secondary);
-            transform: translateX(5px);
-        }
-
-        .footer-contact {
-            list-style: none;
-            padding: 0;
-        }
-
-        .footer-contact li {
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-            margin-bottom: 1rem;
-            font-size: 0.95rem;
-            color: rgba(255, 255, 255, 0.8);
-        }
-
-        .footer-contact i {
-            color: var(--secondary);
-            font-size: 1.1rem;
-            margin-top: 0.2rem;
-        }
-
-        .footer-bottom {
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            padding-top: 2rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1rem;
-            text-align: center;
-        }
-
-        .footer-bottom p {
-            color: rgba(255, 255, 255, 0.7);
-            font-size: 0.9rem;
-            margin: 0;
-        }
-
-        .footer-bottom-links {
-            display: flex;
-            gap: 2rem;
-        }
-
-        .footer-bottom-links a {
-            color: rgba(255, 255, 255, 0.7);
-            text-decoration: none;
-            font-size: 0.9rem;
-            transition: color 0.3s;
-        }
-
-        .footer-bottom-links a:hover {
-            color: var(--secondary);
-        }
-
-        /* ═══════════════════════════════════════════════════════════════
-   RESPONSIVE - NEW SECTIONS
-═══════════════════════════════════════════════════════════════ */
-        @media (min-width: 640px) {
-            .stats-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .testimonials-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        @media (min-width: 768px) {
-            .about-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 4rem;
-            }
-
-            .stats-grid {
-                grid-template-columns: repeat(4, 1fr);
-                gap: 2.5rem;
-            }
-
-            .portfolio-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 2.5rem;
-            }
-
-            .testimonials-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .contact-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 4rem;
-            }
-
-            .footer-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 3rem;
-            }
-
-            .footer-bottom {
-                flex-direction: row;
-                justify-content: space-between;
-            }
-        }
-
-        @media (min-width: 1025px) {
-            .about-section {
-                padding: 8rem 3rem;
-            }
-
-            .stats-section {
-                padding: 6rem 3rem;
-            }
-
-            .portfolio-section {
-                padding: 8rem 3rem;
-            }
-
-            .portfolio-grid {
-                grid-template-columns: repeat(3, 1fr);
-                gap: 3rem;
-            }
-
-            .testimonials-section {
-                padding: 8rem 3rem;
-            }
-
-            .testimonials-grid {
-                grid-template-columns: repeat(3, 1fr);
-                gap: 2.5rem;
-            }
-
-            .contact-section {
-                padding: 8rem 3rem;
-            }
-
-            .footer {
-                padding: 5rem 3rem 2rem;
-            }
-
-            .footer-grid {
-                grid-template-columns: 2fr 1fr 1fr 1.5fr;
-                gap: 4rem;
-            }
-        }
-        /* ═══════════════════════════════════════════════════════════════
-   TEAM SECTION - INFINITE SCROLL
-═══════════════════════════════════════════════════════════════ */
-.team-section-scroll {
-    padding: 6rem 0;
-    background: var(--white);
-    overflow: hidden;
-    position: relative;
-}
-
-.team-container {
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.team-section-scroll .section-header {
-    max-width: 1320px;
-    margin: 0 auto 4rem;
-    padding: 0 1.5rem;
-}
-
-/* MARQUEE CONTAINER */
-.team-marquee-wrapper {
-    position: relative;
-    width: 100%;
-    padding: 2rem 0;
-    overflow: hidden;
-    /* Create 3D space for cards */
-    perspective: 1000px;
-}
-
-/* TRACK ANIMATION */
-.team-track {
-    display: flex;
-    gap: 2rem;
-    width: max-content;
-    animation: scrollTeam 40s linear infinite;
-    padding-left: 2rem;
-}
-
-/* Pause on hover for interaction */
-.team-track:hover {
-    animation-play-state: paused;
-}
-
-@keyframes scrollTeam {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        /* Move exactly half the width (original set width) */
-        transform: translateX(calc(-50% - 1rem));
-    }
-}
-
-/* OVERLAYS FOR FADE EFFECT */
-.marquee-overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 150px;
-    z-index: 10;
-    pointer-events: none;
-}
-
-.overlay-left {
-    left: 0;
-    background: linear-gradient(to right, var(--white) 20%, transparent 100%);
-}
-
-.overlay-right {
-    right: 0;
-    background: linear-gradient(to left, var(--white) 20%, transparent 100%);
-}
-
-/* MODERN TEAM CARD */
-.team-card-modern {
-    width: 300px;
-    flex-shrink: 0;
-    background: var(--white);
-    border-radius: 20px;
-    overflow: hidden;
-    transition: all 0.4s ease;
-    border: 1px solid #F1F5F9;
-    position: relative;
-}
-
-.team-card-modern:hover {
-    transform: translateY(-15px) scale(1.02);
-    box-shadow: 0 20px 40px rgba(30, 64, 175, 0.15);
-    border-color: var(--secondary);
-    z-index: 5;
-}
-
-/* IMAGE AREA */
-.team-img-box {
-    width: 100%;
-    height: 350px;
-    overflow: hidden;
-    position: relative;
-}
-
-.team-img-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top;
-    transition: transform 0.6s ease;
-    filter: grayscale(20%);
-}
-
-.team-card-modern:hover .team-img-box img {
-    transform: scale(1.1);
-    filter: grayscale(0%);
-}
-
-/* SOCIAL ICONS OVERLAY */
-.team-social-hover {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 1.5rem;
-    background: linear-gradient(to top, rgba(15, 23, 42, 0.9) 0%, transparent 100%);
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.4s ease;
-}
-
-.team-card-modern:hover .team-social-hover {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.team-social-hover a {
-    width: 40px;
-    height: 40px;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(5px);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--white);
-    text-decoration: none;
-    transition: all 0.3s;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.team-social-hover a:hover {
-    background: var(--secondary);
-    border-color: var(--secondary);
-    transform: scale(1.1);
-}
-
-/* INFO AREA */
-.team-info {
-    padding: 1.5rem;
-    text-align: center;
-    position: relative;
-    background: var(--white);
-    border-top: 1px solid transparent;
-    transition: border-color 0.3s;
-}
-
-.team-card-modern:hover .team-info {
-    border-top-color: var(--secondary);
-}
-
-.team-info h3 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: var(--dark);
-    margin-bottom: 0.3rem;
-}
-
-.team-role {
-    display: block;
-    font-size: 0.9rem;
-    color: var(--secondary-dark);
-    font-weight: 600;
-    margin-bottom: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-.team-exp {
-    font-size: 0.85rem;
-    color: var(--gray);
-    background: var(--light-gray);
-    display: inline-block;
-    padding: 0.3rem 0.8rem;
-    border-radius: 50px;
-}
-
-/* CTA AT BOTTOM */
-.team-cta {
-    text-align: center;
-    margin-top: 3rem;
-    font-size: 1.1rem;
-    color: var(--dark);
-}
-
-.link-underline {
-    color: var(--secondary-dark);
-    text-decoration: none;
-    font-weight: 700;
-    position: relative;
-    transition: color 0.3s;
-}
-
-.link-underline::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: var(--secondary);
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.3s ease;
-}
-
-.link-underline:hover {
-    color: var(--secondary);
-}
-
-.link-underline:hover::after {
-    transform: scaleX(1);
-    transform-origin: left;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-    .team-card-modern {
-        width: 260px;
-    }
-    
-    .team-img-box {
-        height: 300px;
-    }
-    
-    .overlay-left, .overlay-right {
-        width: 50px;
-    }
-    
-    /* Slightly faster on mobile */
-    .team-track {
-        animation-duration: 30s;
-    }
-}
-
-@media (min-width: 1024px) {
-    .team-card-modern {
-        width: 320px;
-    }
-    
-    .team-img-box {
-        height: 380px;
-    }
-}
-/* ═══════════════════════════════════════════════════════════════
-   WHO WE ARE SECTION - RESPONSIVE & CROSSFADE
-═══════════════════════════════════════════════════════════════ */
-.who-we-are-section {
-    position: relative;
-    padding: 6rem 1.5rem; /* Adjusted padding */
-    min-height: 800px;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    color: var(--white);
-}
-
-/* BACKGROUND SLIDESHOW */
-.bg-slideshow {
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-}
-
-.bg-slide {
-    position: absolute;
-    inset: 0;
-    background-size: cover;
-    background-position: center;
-    opacity: 0;
-    animation: bgCrossfade 15s infinite ease-in-out;
-}
-
-.bg-slide:nth-child(1) { animation-delay: 0s; }
-.bg-slide:nth-child(2) { animation-delay: 5s; }
-.bg-slide:nth-child(3) { animation-delay: 10s; }
-
-@keyframes bgCrossfade {
-    0% { opacity: 0; transform: scale(1.1); }
-    10% { opacity: 1; transform: scale(1); }
-    33% { opacity: 1; transform: scale(1); }
-    43% { opacity: 0; transform: scale(1); }
-    100% { opacity: 0; }
-}
-
-/* OVERLAY */
-.who-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to right, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.85) 60%, rgba(15, 23, 42, 0.7) 100%);
-    z-index: 1;
-}
-
-/* CONTENT CONTAINER */
-.who-container {
-    position: relative;
-    z-index: 2;
-    max-width: 1320px;
-    margin: 0 auto;
-    width: 100%;
-}
-
-/* SECTION HEADER (NEW) */
-.who-header {
-    text-align: center;
-    margin-bottom: 4rem;
-}
-
-.section-label-light {
-    display: inline-block;
-    font-size: 0.9rem;
-    font-weight: 700;
-    color: var(--secondary);
-    letter-spacing: 2px;
+    font-size: 2.8rem;
+    color: #1a1a1a;
     margin-bottom: 0.5rem;
-    text-transform: uppercase;
+    font-weight: 800;
 }
 
-.section-title-light {
-    font-family: 'Poppins', sans-serif;
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: var(--white);
-    margin-bottom: 1rem;
-    line-height: 1.2;
-}
-
-.section-subtitle-light {
+.section-subtitle {
+    text-align: center;
     font-size: 1.1rem;
-    color: rgba(255, 255, 255, 0.8);
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-/* CONTENT WRAPPER GRID */
-.who-content-wrapper {
-    display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    gap: 4rem;
-    align-items: center;
-}
-
-/* LEFT SIDE CONTENT */
-.who-title {
-    font-family: 'Poppins', sans-serif;
-    font-size: 2.2rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    line-height: 1.2;
-    color: var(--white);
-}
-
-.title-underline {
-    width: 80px;
-    height: 3px;
-    background: var(--gradient-secondary);
-    margin-bottom: 1.5rem;
-}
-
-.who-description {
-    font-size: 1.05rem;
-    color: rgba(255, 255, 255, 0.9);
-    line-height: 1.8;
-    margin-bottom: 2.5rem;
-}
-
-/* FEATURE GRID */
-.who-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    color: #666;
     margin-bottom: 3rem;
 }
 
-.who-feature {
-    display: flex;
-    align-items: flex-start; /* Changed to flex-start for better multi-line text alignment */
-    gap: 1.5rem;
+/* Product Hub - Compact */
+.product-hub {
+    position: relative;
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
 }
 
-.feature-icon-glass {
-    width: 60px;
-    height: 60px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    color: var(--secondary);
-    flex-shrink: 0;
-    transition: all 0.3s ease;
+/* SVG Connector Lines */
+.connection-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
 }
 
-.who-feature:hover .feature-icon-glass {
-    background: var(--gradient-secondary);
-    color: var(--dark);
-    transform: rotate(10deg);
+.dotted-line {
+    stroke: #d4521c;
+    stroke-width: 2.5;
+    stroke-dasharray: 8, 6;
+    opacity: 0.6;
+    animation: dash 30s linear infinite;
 }
 
-.feature-text h4 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin-bottom: 0.3rem;
-    color: var(--white);
+@keyframes dash {
+    to { stroke-dashoffset: -1000; }
 }
 
-.feature-text p {
-    font-size: 0.95rem;
-    color: rgba(255, 255, 255, 0.7);
-    margin: 0;
-    line-height: 1.5;
+/* Center Product - Optimized Size */
+.center-product {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    height: 500px;
+    z-index: 10;
+    animation: float 4s ease-in-out infinite;
 }
 
-/* BUTTON */
-.who-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem 2.5rem;
-    background: transparent;
-    border: 2px solid var(--secondary);
-    color: var(--white);
-    text-decoration: none;
-    font-weight: 600;
-    border-radius: 50px;
-    transition: all 0.3s ease;
+.product-glow {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, rgba(212, 82, 28, 0.15), transparent 70%);
+    border-radius: 50%;
+    animation: pulse 3s ease-in-out infinite;
 }
 
-.who-btn:hover {
-    background: var(--secondary);
-    color: var(--dark);
-    padding-right: 3rem;
+.hub-product {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 25px 50px rgba(212, 82, 28, 0.3));
+    position: relative;
+    z-index: 2;
 }
 
-.who-btn i {
-    transition: transform 0.3s ease;
+@keyframes float {
+    0%, 100% { transform: translate(-50%, -50%); }
+    50% { transform: translate(-50%, -54%); }
 }
 
-.who-btn:hover i {
-    transform: translateX(5px);
+@keyframes pulse {
+    0%, 100% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+    50% { opacity: 0.7; transform: translate(-50%, -50%) scale(1.1); }
 }
 
-/* RIGHT SIDE STATS CARD (GLASSMORPHISM) */
-.who-stats-card {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px); /* Safari support */
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 3rem;
-    border-radius: 20px;
+/* Feature Circles - Smaller & Compact */
+.feature-circle {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    max-width: 400px;
-    margin-left: auto; /* Pushes to right in grid */
-}
-
-.glass-stat {
-    display: flex;
     align-items: center;
-    gap: 1.5rem;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    z-index: 5;
+    transition: all 0.3s ease;
+    border: 2px solid #fff5e6;
+    animation: fadeIn 0.8s ease-out forwards;
+    opacity: 0;
 }
 
-.stat-num {
-    font-family: 'Poppins', sans-serif;
-    font-size: 3.5rem;
-    font-weight: 800;
-    color: var(--secondary);
-    line-height: 1;
+.feature-circle:nth-child(3) { animation-delay: 0.2s; }
+.feature-circle:nth-child(4) { animation-delay: 0.4s; }
+.feature-circle:nth-child(5) { animation-delay: 0.6s; }
+.feature-circle:nth-child(6) { animation-delay: 0.8s; }
+.feature-circle:nth-child(7) { animation-delay: 1s; }
+.feature-circle:nth-child(8) { animation-delay: 1.2s; }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
 }
 
-.stat-desc {
-    font-size: 1rem;
-    color: rgba(255, 255, 255, 0.9);
-    line-height: 1.4;
-    font-weight: 500;
+.feature-circle:hover {
+    transform: scale(1.08);
+    box-shadow: 0 12px 40px rgba(212, 82, 28, 0.25);
+    border-color: #d4521c;
 }
 
-.stat-divider {
-    height: 1px;
-    background: linear-gradient(to right, rgba(255,255,255,0.2), transparent);
-    width: 100%;
+/* Circle Positions - Perfectly Aligned with Lines */
+.node-1 { 
+    top: 40px; 
+    left: 150px; 
 }
 
-/* ═══════════════════════════════════════════════════════════════
-   RESPONSIVE DESIGN (MOBILE & TABLET)
-═══════════════════════════════════════════════════════════════ */
-
-/* Tablet (max-width: 1024px) */
-@media (max-width: 1024px) {
-    .who-content-wrapper {
-        grid-template-columns: 1fr; /* Stack vertically */
-        gap: 3rem;
-    }
-
-    .who-stats-card {
-        margin: 0 auto; /* Center stats card */
-        flex-direction: row; /* Horizontal stats on tablet */
-        justify-content: space-between;
-        max-width: 100%;
-        padding: 2rem;
-    }
-
-    .stat-divider {
-        width: 1px;
-        height: 60px;
-        background: rgba(255,255,255,0.2);
-    }
-    
-    .glass-stat {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 0.5rem;
-    }
-    
-    .stat-num {
-        font-size: 2.5rem;
-    }
+.node-2 { 
+    top: 40px; 
+    right: 150px; 
 }
 
-/* Mobile (max-width: 768px) */
-@media (max-width: 768px) {
-    .who-we-are-section {
-        padding: 4rem 1.5rem;
+.node-3 { 
+    top: 230px; /* Centered vertically at y=300 minus half circle (70px) */
+    left: 70px; 
+}
+
+.node-4 { 
+    top: 230px; /* Centered vertically at y=300 minus half circle (70px) */
+    right: 70px; 
+}
+
+.node-5 { 
+    bottom: 40px; 
+    left: 150px; 
+}
+
+.node-6 { 
+    bottom: 40px; 
+    right: 150px; 
+}
+
+/* Circle Icon - Smaller */
+.circle-icon {
+    font-size: 2.2rem;
+    margin-bottom: 0.4rem;
+}
+
+/* Circle Text - Compact */
+.feature-circle h3 {
+    font-size: 0.95rem;
+    color: #d4521c;
+    margin-bottom: 0.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.feature-circle p {
+    font-size: 0.7rem;
+    color: #666;
+    line-height: 1.3;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+    .product-hub {
+        width: 800px;
+        height: 500px;
     }
 
-    .section-title-light {
+    .connection-svg {
+        display: none;
+    }
+
+    .center-product {
+        width: 220px;
+        height: 320px;
+    }
+
+    .feature-circle {
+        width: 120px;
+        height: 120px;
+        padding: 0.8rem;
+    }
+
+    .circle-icon {
         font-size: 2rem;
     }
 
-    .who-title {
-        font-size: 1.8rem;
+    .feature-circle h3 {
+        font-size: 0.85rem;
     }
 
-    .who-stats-card {
-        flex-direction: column; /* Vertical stack on mobile */
-        align-items: center;
+    .feature-circle p {
+        font-size: 0.65rem;
+    }
+
+    .node-1 { top: 30px; left: 120px; }
+    .node-2 { top: 30px; right: 120px; }
+    .node-3 { top: 190px; left: 50px; }
+    .node-4 { top: 190px; right: 50px; }
+    .node-5 { bottom: 30px; left: 120px; }
+    .node-6 { bottom: 30px; right: 120px; }
+}
+
+@media (max-width: 768px) {
+    .product-hub {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
+        padding: 2rem 0;
     }
 
-    .glass-stat {
-        flex-direction: row; /* Horizontal stat items on mobile */
-        width: 100%;
-        justify-content: center;
-        gap: 1rem;
+    .connection-svg {
+        display: none;
     }
 
-    .stat-divider {
-        width: 100%;
-        height: 1px; /* Horizontal divider */
+    .center-product {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        grid-column: 1 / -1;
+        margin: 0 auto 2rem;
+        width: 200px;
+        height: 280px;
     }
 
-    .stat-num {
-        font-size: 2.5rem;
-    }
-    
-    .stat-desc {
-        text-align: left;
-    }
-
-    .who-feature {
-        flex-direction: column; /* Stack icon and text */
-        align-items: center;
-        text-align: center;
-        gap: 1rem;
+    .feature-circle {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        transform: none !important;
+        width: 140px;
+        height: 140px;
+        margin: 0 auto;
     }
 
-    .feature-text {
-        text-align: center;
+    .section-title {
+        font-size: 2.2rem;
     }
 
-    .who-btn {
-        width: 100%;
-        justify-content: center;
+    .section-subtitle {
+        font-size: 1rem;
     }
 }
 
+@media (max-width: 480px) {
+    .product-hub {
+        grid-template-columns: 1fr;
+    }
+}
     </style>
 </head>
-
 <body>
-    <!-- NAVIGATION -->
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="logo">Prime 5</a>
+            <div class="logo">Rootistri</div>
             <ul class="nav-menu">
-                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#dropdown">Dropdown <i class="fas fa-chevron-down"></i></a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <a href="https://wa.me/971586306786" class="nav-cta">Get Started</a>
-            <button class="mobile-toggle" id="mobileToggle" type="button">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <button class="cta-nav">Order Now</button>
         </div>
     </nav>
 
-    <!-- MOBILE SIDEBAR -->
-    <div class="sidebar-overlay" id="sidebarOverlay"></div>
-    <aside class="mobile-sidebar" id="mobileSidebar">
-        <ul class="mobile-menu">
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#dropdown">Dropdown</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <a href="https://wa.me/971586306786" class="mobile-cta">Get Started</a>
-    </aside>
-
-    <!-- HERO SLIDER -->
-    <section class="hero-slider" id="heroSlider">
-        <div class="slides-container">
-            <!-- Slide 1 -->
-            <div class="slide active first-load" data-slide="1">
-                <div class="slide-bg"
-                    style="background-image: url('https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1920&h=1080&fit=crop&q=80');">
-                </div>
-                <div class="slide-overlay"></div>
-                <div class="slide-content">
-                    <div class="content-wrapper">
-                        <h1 class="slide-title">Engineering Excellence for Tomorrow's Infrastructure</h1>
-                        <div class="title-underline"></div>
-                        <p class="slide-description">
-                            Prime 5 Electromechanical delivers cutting-edge mechanical, electrical, and plumbing systems
-                            for UAE's most prestigious developments. From luxury residences to commercial landmarks, we
-                            engineer infrastructure that defines modern Dubai.
-                        </p>
-                        <a href="https://wa.me/971586306786" class="slide-btn">Get Started</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Slide 2 -->
-            <div class="slide" data-slide="2">
-                <div class="slide-bg"
-                    style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&h=1080&fit=crop&q=80');">
-                </div>
-                <div class="slide-overlay"></div>
-                <div class="slide-content">
-                    <div class="content-wrapper">
-                        <h1 class="slide-title">Powering Dubai's Future with MEP Excellence</h1>
-                        <div class="title-underline"></div>
-                        <p class="slide-description">
-                            With over 500 projects delivered across the UAE, we combine technical expertise with
-                            innovative solutions. DEWA approved and Civil Defence certified, we're your trusted partner
-                            for comprehensive MEP services.
-                        </p>
-                        <a href="#portfolio" class="slide-btn">View Projects</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Slide 3 -->
-            <div class="slide" data-slide="3">
-                <div class="slide-bg"
-                    style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&h=1080&fit=crop&q=80');">
-                </div>
-                <div class="slide-overlay"></div>
-                <div class="slide-content">
-                    <div class="content-wrapper">
-                        <h1 class="slide-title">ISO 9001:2015 Certified Quality Assurance</h1>
-                        <div class="title-underline"></div>
-                        <p class="slide-description">
-                            Our commitment to quality and safety is unmatched. With AED 2.5B+ in contract value and 98%
-                            client satisfaction, we deliver MEP solutions that exceed expectations every time. Available
-                            24/7 across all Emirates.
-                        </p>
-                        <a href="#contact" class="slide-btn">Contact Us</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Navigation Arrows -->
-        <div class="slider-nav first-load">
-            <div class="slider-nav-inner">
-                <button class="nav-arrow prev-arrow" type="button" id="prevArrow">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <button class="nav-arrow next-arrow" type="button" id="nextArrow">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- SERVICES SECTION -->
-    <section class="services-section" id="services">
-        <div class="services-container">
-            <div class="section-header fade-in-up">
-                <span class="section-label">OUR EXPERTISE</span>
-                <h2 class="section-title">Comprehensive MEP Solutions for Modern Infrastructure</h2>
-                <p class="section-subtitle">
-                    From design to commissioning, we deliver integrated mechanical, electrical, and plumbing systems
-                    that power Dubai's most ambitious projects.
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <!-- Left Column: Content -->
+            <div class="hero-content">
+                <span class="hero-tag">Fresh & Handmade Daily</span>
+                <h1 class="hero-title">
+                    Authentic Italian <br>
+                    <span class="highlight">Pasta Experience</span>
+                </h1>
+                <p class="hero-description">
+                    Indulge in traditional recipes passed down through generations, 
+                    crafted with premium ingredients and Italian passion.
                 </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary">Explore Menu</button>
+                    <button class="btn-secondary">Reserve Table</button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>50+</h3>
+                        <p>Pasta Varieties</p>
+                    </div>
+                    <div class="stat">
+                        <h3>15k+</h3>
+                        <p>Happy Customers</p>
+                    </div>
+                    <div class="stat">
+                        <h3>4.9★</h3>
+                        <p>Customer Rating</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="services-grid">
-                <!-- Service Card 1 - Electrical Systems -->
-                <div class="service-card fade-in-up">
-                    <div class="service-content">
-                        <div class="service-icon">
-                            <i class="fas fa-bolt"></i>
-                        </div>
-                        <h3 class="service-title">Electrical Systems</h3>
-                        <p class="service-description">
-                            Complete electrical engineering solutions including power distribution, lighting systems,
-                            and emergency backup infrastructure for commercial and residential projects.
-                        </p>
-                        <ul class="service-features">
-                            <li><i class="fas fa-check-circle"></i> DEWA-approved installations</li>
-                            <li><i class="fas fa-check-circle"></i> Smart lighting & automation</li>
-                            <li><i class="fas fa-check-circle"></i> Energy-efficient designs</li>
-                        </ul>
+            <!-- Right Column: 3 Products -->
+            <div class="hero-image">
+                <div class="product-showcase">
+                    <div class="blob-background"></div>
+                    <div class="product-main">
+                        <img src="image.png" alt="Rootistri Pepe Bucato Pasta">
                     </div>
-                </div>
-
-                <!-- Service Card 2 - HVAC & Mechanical -->
-                <div class="service-card fade-in-up">
-                    <div class="service-content">
-                        <div class="service-icon">
-                            <i class="fas fa-wind"></i>
-                        </div>
-                        <h3 class="service-title">HVAC & Mechanical</h3>
-                        <p class="service-description">
-                            Advanced climate control and ventilation systems designed for Dubai's extreme temperatures,
-                            ensuring optimal comfort and energy efficiency year-round.
-                        </p>
-                        <ul class="service-features">
-                            <li><i class="fas fa-check-circle"></i> VRF & chilled water systems</li>
-                            <li><i class="fas fa-check-circle"></i> Energy recovery ventilation</li>
-                            <li><i class="fas fa-check-circle"></i> BMS integration</li>
-                        </ul>
+                    <div class="product-side product-left">
+                        <img src="image.png" alt="Rootistri Pasta">
                     </div>
-                </div>
-
-                <!-- Service Card 3 - Plumbing & Drainage -->
-                <div class="service-card fade-in-up">
-                    <div class="service-content">
-                        <div class="service-icon">
-                            <i class="fas fa-water"></i>
-                        </div>
-                        <h3 class="service-title">Plumbing & Drainage</h3>
-                        <p class="service-description">
-                            Sustainable water management systems including supply, drainage, sewage treatment, and
-                            rainwater harvesting for eco-friendly infrastructure.
-                        </p>
-                        <ul class="service-features">
-                            <li><i class="fas fa-check-circle"></i> Municipality-approved systems</li>
-                            <li><i class="fas fa-check-circle"></i> Water conservation solutions</li>
-                            <li><i class="fas fa-check-circle"></i> STP & greywater recycling</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Service Card 4 - Fire & Life Safety -->
-                <div class="service-card fade-in-up">
-                    <div class="service-content">
-                        <div class="service-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <h3 class="service-title">Fire & Life Safety</h3>
-                        <p class="service-description">
-                            Civil Defence-certified fire alarm, sprinkler, and suppression systems ensuring full
-                            compliance with UAE safety regulations and building codes.
-                        </p>
-                        <ul class="service-features">
-                            <li><i class="fas fa-check-circle"></i> Civil Defence approved</li>
-                            <li><i class="fas fa-check-circle"></i> FM200 & sprinkler systems</li>
-                            <li><i class="fas fa-check-circle"></i> Emergency evacuation systems</li>
-                        </ul>
+                    <div class="product-side product-right">
+                        <img src="image.png" alt="Rootistri Pasta">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ABOUT SECTION -->
-    <section class="about-section" id="about">
-        <div class="about-container">
-            <div class="about-grid">
-                <div class="about-image fade-in-up">
-                    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&h=600&fit=crop&q=80"
-                        alt="Prime 5 Electromechanical Team">
-                    <div class="about-badge">
-                        <div class="badge-icon">
-                            <i class="fas fa-award"></i>
-                        </div>
-                        <div class="badge-text">
-                            <strong>15+ Years</strong>
-                            <span>Excellence</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="about-content fade-in-up">
-                    <span class="section-label">ABOUT US</span>
-                    <h2 class="section-title">Dubai's Leading MEP Contractor Since 2010</h2>
-                    <p class="about-text">
-                        Prime 5 Electromechanical has established itself as a premier MEP contractor in the UAE,
-                        delivering world-class mechanical, electrical, and plumbing solutions for over 15 years. Our
-                        commitment to excellence and innovation has made us the preferred partner for Dubai's most
-                        prestigious developments.
-                    </p>
-                    <p class="about-text">
-                        With a team of 200+ certified engineers and technicians, we've successfully completed over 500
-                        projects across residential, commercial, hospitality, and industrial sectors. Our ISO 9001:2015
-                        certification and partnerships with leading brands ensure that every project meets international
-                        quality standards.
-                    </p>
-
-                    <div class="about-features">
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <strong>DEWA Approved Contractor</strong>
-                                <p>Official approvals for all electrical installations</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <strong>Civil Defence Certified</strong>
-                                <p>Authorized for fire & life safety systems</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <strong>ISO 9001:2015 Certified</strong>
-                                <p>International quality management standards</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <a href="#contact" class="cta-button">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- STATS SECTION - OPTION 2 (Background Image) -->
-    <section class="stats-section-v2">
-        <div class="stats-overlay-v2"></div>
-        <div class="stats-container">
-            <div class="stats-header-v2">
-                <h2 class="stats-title-v2">
-                    <i class="fas fa-check-circle"></i> Take the right step,
-                    <span class="highlight-text">do the big things.</span>
-                </h2>
-            </div>
-
-            <div class="stats-grid-v2">
-                <div class="stat-item-v2 scale-in">
-                    <div class="stat-number-v2" data-target="52">0</div>
-                    <div class="stat-label-v2">Cases Solved</div>
-                </div>
-
-                <div class="stat-item-v2 scale-in">
-                    <div class="stat-number-v2" data-target="164">0</div>
-                    <div class="stat-label-v2">Trained Experts</div>
-                </div>
-
-                <div class="stat-item-v2 scale-in">
-                    <div class="stat-number-v2" data-target="38">0</div>
-                    <div class="stat-label-v2">Branches</div>
-                </div>
-
-                <div class="stat-item-v2 scale-in">
-                    <div class="stat-number-v2" data-target="100">0</div>
-                    <div class="stat-label-v2">Satisfied Clients</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-<!-- TRANSFORMATION CAROUSEL SECTION -->
-<section class="trans-carousel-section" id="projects-compare">
     
-    <!-- Header (Kept within standard width) -->
-    <div class="trans-header-container">
-        <div class="section-header fade-in-up">
-            <span class="section-label">ENGINEERING EXCELLENCE</span>
-            <h2 class="section-title">Behind The Finish</h2>
-            <p class="section-subtitle">
-                Drag the slider to reveal the MEP systems behind the finished work.
-            </p>
-        </div>
-    </div>
 
-    <!-- WIDE CAROUSEL WRAPPER -->
-    <div class="trans-wide-wrapper fade-in-up">
-        
-        <!-- Navigation Button Left -->
-        <button class="carousel-nav nav-left" id="prevBtn">
-            <i class="fas fa-chevron-left"></i>
-        </button>
+    <!-- What is Rootistri Section -->
+    <section class="rootistri-section">
+        <div class="rootistri-container">
+            <div class="section-header scroll-animate">
+                <span class="section-label">Discover</span>
+                <h2 class="section-title">What is <span class="highlight">Rootistri?</span></h2>
+            </div>
 
-        <!-- SLIDES CONTAINER -->
-        <div class="trans-slides-container" id="slidesContainer">
-            
-            <!-- SLIDE 1 -->
-            <div class="trans-slide active">
-                <div class="trans-card wide-card">
-                    <div class="compare-viewer">
-                        <div class="img-layer after">
-                            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1600&h=900&fit=crop&q=80" alt="Finished Interior">
-                            <span class="label label-finished">Finished</span>
-                        </div>
-                        <div class="img-layer before">
-                            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&h=900&fit=crop&q=80" alt="MEP Works">
-                            <span class="label label-mep">MEP Works</span>
-                        </div>
-                        <div class="handle">
-                            <div class="handle-line"></div>
-                            <div class="handle-circle"><i class="fas fa-arrows-alt-h"></i></div>
+            <div class="story-timeline">
+                <!-- Card 1 -->
+                <div class="timeline-card scroll-animate" data-delay="0">
+                    <div class="card-number">01</div>
+                    <div class="card-visual">
+                        <div class="visual-circle orange">
+                            <span class="visual-icon">🌾</span>
                         </div>
                     </div>
-                    <div class="trans-info-wide">
-                        <div class="info-content">
-                            <h3>Luxury Villa HVAC</h3>
-                            <p>Concealed ducted split units with smart zoning control.</p>
+                    <div class="card-content">
+                        <h3>Ancient Grain Revival</h3>
+                        <p>We rediscovered Khapli (Emmer) wheat, a 5,000-year-old ancient grain that was nearly forgotten. This super grain was once the food of pharaohs and emperors.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="timeline-card scroll-animate reverse" data-delay="200">
+                    <div class="card-number">02</div>
+                    <div class="card-visual">
+                        <div class="visual-circle blue">
+                            <span class="visual-icon">🏭</span>
                         </div>
-                        <div class="info-meta">
-                            <span><i class="fas fa-ruler-combined"></i> 12,000 sq.ft</span>
-                            <span><i class="fas fa-map-marker-alt"></i> Palm Jumeirah</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Cold-Press Technology</h3>
+                        <p>Using traditional cold-press methods, we preserve all nutrients, fiber, and natural goodness. No heat, no chemicals, just pure wheat transformed into perfect pasta.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="timeline-card scroll-animate" data-delay="400">
+                    <div class="card-number">03</div>
+                    <div class="card-visual">
+                        <div class="visual-circle green">
+                            <span class="visual-icon">🍝</span>
                         </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Italian Meets Indian</h3>
+                        <p>Authentic Italian pasta-making techniques meet Indian health wisdom. Perfect for biryani, pulao, or classic Italian dishes - truly versatile nutrition.</p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="timeline-card scroll-animate reverse" data-delay="600">
+                    <div class="card-number">04</div>
+                    <div class="card-visual">
+                        <div class="visual-circle red">
+                            <span class="visual-icon">❤️</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Health & Taste Together</h3>
+                        <p>Low glycemic index, high in protein and fiber, diabetic-friendly. Finally, pasta that's good for you without compromising on the taste you love.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- SLIDE 2 -->
-            <div class="trans-slide">
-                <div class="trans-card wide-card">
-                    <div class="compare-viewer">
-                        <div class="img-layer after">
-                            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&h=900&fit=crop&q=80" alt="Finished Office">
-                            <span class="label label-finished">Finished</span>
-                        </div>
-                        <div class="img-layer before">
-                            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1600&h=900&fit=crop&q=80" alt="Electrical Cabling">
-                            <span class="label label-mep">Electrical</span>
-                        </div>
-                        <div class="handle">
-                            <div class="handle-line"></div>
-                            <div class="handle-circle"><i class="fas fa-arrows-alt-h"></i></div>
-                        </div>
-                    </div>
-                    <div class="trans-info-wide">
-                        <div class="info-content">
-                            <h3>Corporate Office Wiring</h3>
-                            <p>Structured cabling & server room power distribution.</p>
-                        </div>
-                        <div class="info-meta">
-                            <span><i class="fas fa-bolt"></i> 500kW Load</span>
-                            <span><i class="fas fa-map-marker-alt"></i> DIFC, Dubai</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- SLIDE 3 -->
-            <div class="trans-slide">
-                <div class="trans-card wide-card">
-                    <div class="compare-viewer">
-                        <div class="img-layer after">
-                            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=1600&h=900&fit=crop&q=80" alt="Finished Bathroom">
-                            <span class="label label-finished">Finished</span>
-                        </div>
-                        <div class="img-layer before">
-                            <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?w=1600&h=900&fit=crop&q=80" alt="Plumbing Piping">
-                            <span class="label label-mep">Plumbing</span>
-                        </div>
-                        <div class="handle">
-                            <div class="handle-line"></div>
-                            <div class="handle-circle"><i class="fas fa-arrows-alt-h"></i></div>
-                        </div>
-                    </div>
-                    <div class="trans-info-wide">
-                        <div class="info-content">
-                            <h3>High-Rise Plumbing</h3>
-                            <p>Advanced water supply & drainage system integration.</p>
-                        </div>
-                        <div class="info-meta">
-                            <span><i class="fas fa-building"></i> 45 Floors</span>
-                            <span><i class="fas fa-map-marker-alt"></i> Downtown Dubai</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- Navigation Button Right -->
-        <button class="carousel-nav nav-right" id="nextBtn">
-            <i class="fas fa-chevron-right"></i>
-        </button>
-
-    </div>
-
-    <!-- Dots Indicator -->
-    <div class="carousel-dots">
-        <span class="dot active" data-slide="0"></span>
-        <span class="dot" data-slide="1"></span>
-        <span class="dot" data-slide="2"></span>
-    </div>
-
-</section>
-
-<!-- WHO WE ARE SECTION - BACKGROUND CROSSFADE -->
-<section class="who-we-are-section" id="about">
-    <!-- Background Slideshow -->
-    <div class="bg-slideshow">
-        <div class="bg-slide" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&h=1080&fit=crop&q=80');"></div>
-        <div class="bg-slide" style="background-image: url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1920&h=1080&fit=crop&q=80');"></div>
-        <div class="bg-slide" style="background-image: url('https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1920&h=1080&fit=crop&q=80');"></div>
-    </div>
-    
-    <!-- Dark Overlay for Readability -->
-    <div class="who-overlay"></div>
-
-    <!-- Content Container -->
-    <div class="who-container">
-        
-        <!-- NEW HEADER SECTION -->
-        <div class="who-header fade-in-up">
-            <span class="section-label-light">ABOUT PRIME 5</span>
-            <h2 class="section-title-light">Engineering Excellence</h2>
-            <p class="section-subtitle-light">Delivering world-class MEP solutions across the UAE since 2010.</p>
-        </div>
-
-        <div class="who-content-wrapper">
-            <!-- Left Side Content -->
-            <div class="who-content fade-in-up">
-                <h3 class="who-title">Building Dubai's Future</h3>
-                <div class="title-underline"></div>
-                
-                <p class="who-description">
-                    Prime 5 Electromechanical is a premier MEP contractor dedicated to engineering excellence. 
-                    With over 15 years of experience, we transform complex architectural visions into 
-                    living, breathing infrastructures. Our commitment to quality, safety, and innovation 
-                    has made us the trusted partner for Dubai's most prestigious developments.
-                </p>
-
-                <div class="who-grid">
-                    <!-- Feature 1 -->
-                    <div class="who-feature">
-                        <div class="feature-icon-glass">
-                            <i class="fas fa-certificate"></i>
-                        </div>
-                        <div class="feature-text">
-                            <h4>Certified Excellence</h4>
-                            <p>ISO 9001:2015, DEWA & Civil Defence Approved</p>
-                        </div>
-                    </div>
-
-                    <!-- Feature 2 -->
-                    <div class="who-feature">
-                        <div class="feature-icon-glass">
-                            <i class="fas fa-users-cog"></i>
-                        </div>
-                        <div class="feature-text">
-                            <h4>Expert Workforce</h4>
-                            <p>200+ Engineers & Technicians on staff</p>
-                        </div>
-                    </div>
-
-                    <!-- Feature 3 -->
-                    <div class="who-feature">
-                        <div class="feature-icon-glass">
-                            <i class="fas fa-history"></i>
-                        </div>
-                        <div class="feature-text">
-                            <h4>Proven Legacy</h4>
-                            <p>500+ Projects Delivered Successfully</p>
-                        </div>
-                    </div>
-                </div>
-
-                <a href="#contact" class="who-btn">
-                    <span>Discover Our Story</span>
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-            
-            <!-- Right Side Glass Card (Stats) -->
-            <div class="who-stats-card fade-in-up">
-                <div class="glass-stat">
-                    <strong class="stat-num">15+</strong>
-                    <span class="stat-desc">Years of<br>Experience</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="glass-stat">
-                    <strong class="stat-num">500+</strong>
-                    <span class="stat-desc">Completed<br>Projects</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="glass-stat">
-                    <strong class="stat-num">24/7</strong>
-                    <span class="stat-desc">Support<br>Available</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-    <!-- TEAM SECTION - CONTINUOUS SCROLL -->
-<section class="team-section-scroll" id="team">
-    <div class="team-container">
-        <!-- Section Header -->
-        <div class="section-header fade-in-up">
-            <span class="section-label">MEET THE EXPERTS</span>
-            <h2 class="section-title">The Minds Behind Prime 5</h2>
-            <p class="section-subtitle">
-                Our strength lies in our people. A team of certified engineers, project managers, and technical experts dedicated to engineering excellence.
-            </p>
-        </div>
-
-        <!-- Marquee Wrapper -->
-        <div class="team-marquee-wrapper fade-in-up">
-            <!-- Left Fade Overlay -->
-            <div class="marquee-overlay overlay-left"></div>
-            
-            <!-- Scrolling Track -->
-            <div class="team-track">
-                
-                <!-- TEAM CARD 1 -->
-                <div class="team-card-modern">
-                    <div class="team-img-box">
-                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=500&fit=crop&q=80" alt="CEO">
-                        <div class="team-social-hover">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <div class="team-info">
-                        <h3>James Anderson</h3>
-                        <span class="team-role">Chief Executive Officer</span>
-                        <p class="team-exp">20+ Years Experience</p>
-                    </div>
-                </div>
-
-                <!-- TEAM CARD 2 -->
-                <div class="team-card-modern">
-                    <div class="team-img-box">
-                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=500&fit=crop&q=80" alt="Operations Manager">
-                        <div class="team-social-hover">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <div class="team-info">
-                        <h3>Sarah Mitchell</h3>
-                        <span class="team-role">Operations Director</span>
-                        <p class="team-exp">15+ Years Experience</p>
-                    </div>
-                </div>
-
-                <!-- TEAM CARD 3 -->
-                <div class="team-card-modern">
-                    <div class="team-img-box">
-                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=500&fit=crop&q=80" alt="Project Manager">
-                        <div class="team-social-hover">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <div class="team-info">
-                        <h3>David Chen</h3>
-                        <span class="team-role">Senior Project Manager</span>
-                        <p class="team-exp">12+ Years Experience</p>
-                    </div>
-                </div>
-
-                <!-- TEAM CARD 4 -->
-                <div class="team-card-modern">
-                    <div class="team-img-box">
-                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=500&fit=crop&q=80" alt="Electrical Engineer">
-                        <div class="team-social-hover">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <div class="team-info">
-                        <h3>Emily Rodriguez</h3>
-                        <span class="team-role">Lead Electrical Engineer</span>
-                        <p class="team-exp">DEWA Certified</p>
-                    </div>
-                </div>
-
-                <!-- TEAM CARD 5 -->
-                <div class="team-card-modern">
-                    <div class="team-img-box">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop&q=80" alt="Mechanical Engineer">
-                        <div class="team-social-hover">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <div class="team-info">
-                        <h3>Michael Chang</h3>
-                        <span class="team-role">HVAC Specialist</span>
-                        <p class="team-exp">ASHRAE Member</p>
-                    </div>
-                </div>
-
-                <!-- TEAM CARD 6 -->
-                <div class="team-card-modern">
-                    <div class="team-img-box">
-                        <img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&h=500&fit=crop&q=80" alt="Safety Officer">
-                        <div class="team-social-hover">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <div class="team-info">
-                        <h3>Fatima Al Sayed</h3>
-                        <span class="team-role">HSE Manager</span>
-                        <p class="team-exp">NEBOSH Certified</p>
-                    </div>
-                </div>
-
-                <!-- DUPLICATE CARDS FOR SEAMLESS LOOP (Required for CSS marquee) -->
-                <!-- Duplicate 1 -->
-                <div class="team-card-modern">
-                    <div class="team-img-box">
-                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=500&fit=crop&q=80" alt="CEO">
-                        <div class="team-social-hover">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <div class="team-info">
-                        <h3>James Anderson</h3>
-                        <span class="team-role">Chief Executive Officer</span>
-                        <p class="team-exp">20+ Years Experience</p>
-                    </div>
-                </div>
-                <!-- Duplicate 2 -->
-                <div class="team-card-modern">
-                    <div class="team-img-box">
-                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=500&fit=crop&q=80" alt="Operations Manager">
-                        <div class="team-social-hover">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <div class="team-info">
-                        <h3>Sarah Mitchell</h3>
-                        <span class="team-role">Operations Director</span>
-                        <p class="team-exp">15+ Years Experience</p>
-                    </div>
-                </div>
-                <!-- Duplicate 3 -->
-                <div class="team-card-modern">
-                    <div class="team-img-box">
-                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=500&fit=crop&q=80" alt="Project Manager">
-                        <div class="team-social-hover">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <div class="team-info">
-                        <h3>David Chen</h3>
-                        <span class="team-role">Senior Project Manager</span>
-                        <p class="team-exp">12+ Years Experience</p>
-                    </div>
-                </div>
-                <!-- Duplicate 4 -->
-                <div class="team-card-modern">
-                    <div class="team-img-box">
-                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=500&fit=crop&q=80" alt="Electrical Engineer">
-                        <div class="team-social-hover">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <div class="team-info">
-                        <h3>Emily Rodriguez</h3>
-                        <span class="team-role">Lead Electrical Engineer</span>
-                        <p class="team-exp">DEWA Certified</p>
-                    </div>
-                </div>
-                 <!-- Duplicate 5 -->
-                <div class="team-card-modern">
-                    <div class="team-img-box">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop&q=80" alt="Mechanical Engineer">
-                        <div class="team-social-hover">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <div class="team-info">
-                        <h3>Michael Chang</h3>
-                        <span class="team-role">HVAC Specialist</span>
-                        <p class="team-exp">ASHRAE Member</p>
-                    </div>
-                </div>
-                 <!-- Duplicate 6 -->
-                <div class="team-card-modern">
-                    <div class="team-img-box">
-                        <img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&h=500&fit=crop&q=80" alt="Safety Officer">
-                        <div class="team-social-hover">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <div class="team-info">
-                        <h3>Fatima Al Sayed</h3>
-                        <span class="team-role">HSE Manager</span>
-                        <p class="team-exp">NEBOSH Certified</p>
-                    </div>
-                </div>
-
-            </div>
-            
-            <!-- Right Fade Overlay -->
-            <div class="marquee-overlay overlay-right"></div>
-        </div>
-        
-        <!-- Join Team CTA -->
-        <div class="team-cta fade-in-up">
-            <p>Want to join our expert team? <a href="#careers" class="link-underline">View Open Positions</a></p>
-        </div>
-    </div>
-</section>
-
-
-    <!-- TESTIMONIALS SECTION -->
-    <section class="testimonials-section">
-        <div class="testimonials-container">
-            <div class="section-header fade-in-up">
-                <span class="section-label">TESTIMONIALS</span>
-                <h2 class="section-title">What Our Clients Say</h2>
-                <p class="section-subtitle">
-                    Don't just take our word for it - hear from our satisfied clients across the UAE.
-                </p>
-            </div>
-
-            <div class="testimonials-slider-wrapper">
-                <div class="testimonials-slider">
-                    <!-- Row 1 - Scrolls Left -->
-                    <div class="testimonials-row testimonials-row-1">
-                        <div class="testimonial-card-slider">
-                            <div class="testimonial-header">
-                                <img src="https://i.pravatar.cc/150?img=12" alt="Ahmed Al Mansoori">
-                                <div>
-                                    <strong>Ahmed Al Mansoori</strong>
-                                    <span>@ahmedmansoori</span>
-                                </div>
-                                <i class="fab fa-twitter verify-icon"></i>
-                            </div>
-                            <p class="testimonial-text">
-                                "Prime 5 delivered exceptional MEP services for our residential tower. Their attention
-                                to detail and commitment to quality is unmatched."
-                            </p>
-                        </div>
-
-                        <div class="testimonial-card-slider">
-                            <div class="testimonial-header">
-                                <img src="https://i.pravatar.cc/150?img=33" alt="Sarah Johnson">
-                                <div>
-                                    <strong>Sarah Johnson</strong>
-                                    <span>@sarahjohnson</span>
-                                </div>
-                                <i class="fab fa-twitter verify-icon"></i>
-                            </div>
-                            <p class="testimonial-text">
-                                "Outstanding professionalism and technical expertise. Prime 5's team handled our complex
-                                commercial project with ease."
-                            </p>
-                        </div>
-
-                        <div class="testimonial-card-slider">
-                            <div class="testimonial-header">
-                                <img src="https://i.pravatar.cc/150?img=57" alt="Mohammed Hassan">
-                                <div>
-                                    <strong>Mohammed Hassan</strong>
-                                    <span>@mohammedh</span>
-                                </div>
-                                <i class="fab fa-twitter verify-icon"></i>
-                            </div>
-                            <p class="testimonial-text">
-                                "We've worked with Prime 5 on multiple hotel projects. Their expertise in hospitality
-                                MEP systems is unparalleled."
-                            </p>
-                        </div>
-
-                        <div class="testimonial-card-slider">
-                            <div class="testimonial-header">
-                                <img src="https://i.pravatar.cc/150?img=68" alt="Fatima Al Zaabi">
-                                <div>
-                                    <strong>Fatima Al Zaabi</strong>
-                                    <span>@fatimaalzaabi</span>
-                                </div>
-                                <i class="fab fa-twitter verify-icon"></i>
-                            </div>
-                            <p class="testimonial-text">
-                                "The automation features alone have saved our team countless hours. Setup was
-                                ridiculously easy - we were running live in 10 minutes."
-                            </p>
-                        </div>
-
-                        <!-- Duplicate for seamless loop -->
-                        <div class="testimonial-card-slider">
-                            <div class="testimonial-header">
-                                <img src="https://i.pravatar.cc/150?img=12" alt="Ahmed Al Mansoori">
-                                <div>
-                                    <strong>Ahmed Al Mansoori</strong>
-                                    <span>@ahmedmansoori</span>
-                                </div>
-                                <i class="fab fa-twitter verify-icon"></i>
-                            </div>
-                            <p class="testimonial-text">
-                                "Prime 5 delivered exceptional MEP services for our residential tower. Their attention
-                                to detail and commitment to quality is unmatched."
-                            </p>
-                        </div>
-
-                        <div class="testimonial-card-slider">
-                            <div class="testimonial-header">
-                                <img src="https://i.pravatar.cc/150?img=33" alt="Sarah Johnson">
-                                <div>
-                                    <strong>Sarah Johnson</strong>
-                                    <span>@sarahjohnson</span>
-                                </div>
-                                <i class="fab fa-twitter verify-icon"></i>
-                            </div>
-                            <p class="testimonial-text">
-                                "Outstanding professionalism and technical expertise. Prime 5's team handled our complex
-                                commercial project with ease."
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Row 2 - Scrolls Right -->
-                    <div class="testimonials-row testimonials-row-2">
-                        <div class="testimonial-card-slider">
-                            <div class="testimonial-header">
-                                <img src="https://i.pravatar.cc/150?img=14" alt="John Smith">
-                                <div>
-                                    <strong>John Smith</strong>
-                                    <span>@johnsmith</span>
-                                </div>
-                                <i class="fab fa-twitter verify-icon"></i>
-                            </div>
-                            <p class="testimonial-text">
-                                "This SaaS app has completely streamlined our onboarding process. The project was
-                                completed on time and within budget."
-                            </p>
-                        </div>
-
-                        <div class="testimonial-card-slider">
-                            <div class="testimonial-header">
-                                <img src="https://i.pravatar.cc/150?img=45" alt="Liam Brooks">
-                                <div>
-                                    <strong>Liam Brooks</strong>
-                                    <span>@liambrooks</span>
-                                </div>
-                                <i class="fab fa-twitter verify-icon"></i>
-                            </div>
-                            <p class="testimonial-text">
-                                "We've tried several tools, but nothing comes close in terms of ease of use and powerful
-                                features. Highly recommended!"
-                            </p>
-                        </div>
-
-                        <div class="testimonial-card-slider">
-                            <div class="testimonial-header">
-                                <img src="https://i.pravatar.cc/150?img=22" alt="Maya Patel">
-                                <div>
-                                    <strong>Maya Patel</strong>
-                                    <span>@mayapatel</span>
-                                </div>
-                                <i class="fab fa-twitter verify-icon"></i>
-                            </div>
-                            <p class="testimonial-text">
-                                "Their 24/7 support is invaluable for facility management. Prime 5 is our go-to
-                                contractor for all MEP projects."
-                            </p>
-                        </div>
-
-                        <div class="testimonial-card-slider">
-                            <div class="testimonial-header">
-                                <img src="https://i.pravatar.cc/150?img=51" alt="Sophia Carter">
-                                <div>
-                                    <strong>Sophia Carter</strong>
-                                    <span>@sophiacarter</span>
-                                </div>
-                                <i class="fab fa-twitter verify-icon"></i>
-                            </div>
-                            <p class="testimonial-text">
-                                "Incredibly easy. Within 10 minutes, we were running live operations with their system.
-                                Game-changing technology!"
-                            </p>
-                        </div>
-
-                        <!-- Duplicate for seamless loop -->
-                        <div class="testimonial-card-slider">
-                            <div class="testimonial-header">
-                                <img src="https://i.pravatar.cc/150?img=14" alt="John Smith">
-                                <div>
-                                    <strong>John Smith</strong>
-                                    <span>@johnsmith</span>
-                                </div>
-                                <i class="fab fa-twitter verify-icon"></i>
-                            </div>
-                            <p class="testimonial-text">
-                                "This SaaS app has completely streamlined our onboarding process. The project was
-                                completed on time and within budget."
-                            </p>
-                        </div>
-
-                        <div class="testimonial-card-slider">
-                            <div class="testimonial-header">
-                                <img src="https://i.pravatar.cc/150?img=45" alt="Liam Brooks">
-                                <div>
-                                    <strong>Liam Brooks</strong>
-                                    <span>@liambrooks</span>
-                                </div>
-                                <i class="fab fa-twitter verify-icon"></i>
-                            </div>
-                            <p class="testimonial-text">
-                                "We've tried several tools, but nothing comes close in terms of ease of use and powerful
-                                features. Highly recommended!"
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            <!-- CTA -->
+            <div class="section-cta scroll-animate" data-delay="800">
+                <button class="btn-primary">Explore Our Products</button>
+                <button class="btn-secondary">Read Full Story</button>
             </div>
         </div>
     </section>
+<!-- Product Features Connection Section -->
+<section class="product-features-section">
+    <div class="features-container">
+        <h2 class="section-title">Why Choose <span class="highlight">Rootistri?</span></h2>
+        <p class="section-subtitle">Premium Emmer Wheat Pasta with Unmatched Benefits</p>
 
+        <div class="product-hub">
+            <!-- Center Product -->
+            <div class="center-product">
+                <div class="product-glow"></div>
+                <img src="image.png" alt="Rootistri Pasta" class="hub-product">
+            </div>
 
-    <!-- CONTACT SECTION -->
-    <section class="contact-section" id="contact">
-        <div class="contact-container">
-            <div class="contact-grid">
-                <div class="contact-info fade-in-up">
-                    <span class="section-label">GET IN TOUCH</span>
-                    <h2 class="section-title">Let's Build Something Great Together</h2>
-                    <p class="contact-text">
-                        Ready to start your MEP project? Contact us today for a free consultation and quote. Our team is
-                        available 24/7 to assist you.
-                    </p>
+            <!-- Connector Lines (SVG for straight dotted lines) -->
+            <svg class="connection-svg" viewBox="0 0 1000 600">
+                <!-- Top Left -->
+                <line x1="500" y1="300" x2="220" y2="110" class="dotted-line" />
+                <!-- Top Right -->
+                <line x1="500" y1="300" x2="780" y2="110" class="dotted-line" />
+                <!-- Middle Left - Horizontal -->
+                <line x1="500" y1="300" x2="140" y2="300" class="dotted-line" />
+                <!-- Middle Right - Horizontal -->
+                <line x1="500" y1="300" x2="860" y2="300" class="dotted-line" />
+                <!-- Bottom Left -->
+                <line x1="500" y1="300" x2="220" y2="490" class="dotted-line" />
+                <!-- Bottom Right -->
+                <line x1="500" y1="300" x2="780" y2="490" class="dotted-line" />
+            </svg>
 
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div>
-                                <strong>Visit Us</strong>
-                                <p>Sheikh Zayed Road, Dubai, UAE</p>
-                            </div>
-                        </div>
+            <!-- Feature 1 - Top Left -->
+            <div class="feature-circle node-1">
+                <div class="circle-icon">🌾</div>
+                <h3>Ancient Grain</h3>
+                <p>5,000-year-old Khapli Emmer Wheat</p>
+            </div>
 
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div>
-                                <strong>Call Us</strong>
-                                <p>+971 58 630 6786</p>
-                            </div>
-                        </div>
+            <!-- Feature 2 - Top Right -->
+            <div class="feature-circle node-2">
+                <div class="circle-icon">💪</div>
+                <h3>High Protein</h3>
+                <p>3x more protein than regular pasta</p>
+            </div>
 
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div>
-                                <strong>Email Us</strong>
-                                <p>info@prime5electro.com</p>
-                            </div>
-                        </div>
+            <!-- Feature 3 - Middle Left -->
+            <div class="feature-circle node-3">
+                <div class="circle-icon">❤️</div>
+                <h3>Heart Healthy</h3>
+                <p>Low GI, diabetic-friendly</p>
+            </div>
 
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-clock"></i>
-                            </div>
-                            <div>
-                                <strong>Working Hours</strong>
-                                <p>24/7 Emergency Support Available</p>
-                            </div>
-                        </div>
-                    </div>
+            <!-- Feature 4 - Middle Right -->
+            <div class="feature-circle node-4">
+                <div class="circle-icon">🍝</div>
+                <h3>Versatile</h3>
+                <p>Indian & Italian dishes</p>
+            </div>
 
-                    <div class="social-links">
-                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
+            <!-- Feature 5 - Bottom Left -->
+            <div class="feature-circle node-5">
+                <div class="circle-icon">🏭</div>
+                <h3>Cold-Pressed</h3>
+                <p>100% nutrients preserved</p>
+            </div>
 
-                <div class="contact-form-wrapper fade-in-up">
-                    <form class="contact-form">
-                        <div class="form-group">
-                            <input type="text" placeholder="Your Name *" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Your Email *" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" placeholder="Phone Number *" required>
-                        </div>
-                        <div class="form-group">
-                            <select required>
-                                <option value="">Select Service *</option>
-                                <option value="electrical">Electrical Systems</option>
-                                <option value="hvac">HVAC & Mechanical</option>
-                                <option value="plumbing">Plumbing & Drainage</option>
-                                <option value="fire">Fire & Life Safety</option>
-                                <option value="maintenance">Maintenance</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <textarea rows="5" placeholder="Project Details *" required></textarea>
-                        </div>
-                        <button type="submit" class="cta-button">Send Message</button>
-                    </form>
-                </div>
+            <!-- Feature 6 - Bottom Right -->
+            <div class="feature-circle node-6">
+                <div class="circle-icon">✓</div>
+                <h3>No Preservatives</h3>
+                <p>100% natural ingredients</p>
             </div>
         </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h3 class="footer-logo">Prime 5</h3>
-                    <p class="footer-text">
-                        Leading MEP contractor in Dubai, delivering excellence in mechanical, electrical, and plumbing
-                        solutions since 2010.
-                    </p>
-                    <div class="footer-certifications">
-                        <img src="https://via.placeholder.com/80x60/1E40AF/FFFFFF?text=ISO" alt="ISO Certified">
-                        <img src="https://via.placeholder.com/80x60/1E40AF/FFFFFF?text=DEWA" alt="DEWA Approved">
-                    </div>
-                </div>
-
-                <div class="footer-col">
-                    <h4 class="footer-title">Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4 class="footer-title">Our Services</h4>
-                    <ul class="footer-links">
-                        <li><a href="#services">Electrical Systems</a></li>
-                        <li><a href="#services">HVAC & Mechanical</a></li>
-                        <li><a href="#services">Plumbing & Drainage</a></li>
-                        <li><a href="#services">Fire & Life Safety</a></li>
-                        <li><a href="#services">MEP Maintenance</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4 class="footer-title">Contact Info</h4>
-                    <ul class="footer-contact">
-                        <li><i class="fas fa-map-marker-alt"></i> Sheikh Zayed Road, Dubai</li>
-                        <li><i class="fas fa-phone"></i> +971 58 630 6786</li>
-                        <li><i class="fas fa-envelope"></i> info@prime5electro.com</li>
-                        <li><i class="fas fa-clock"></i> 24/7 Support Available</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2026 Prime 5 Electromechanical. All rights reserved.</p>
-                <div class="footer-bottom-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-
-
+    </div>
+</section>
     <script>
-        // MOBILE MENU
-        const mobileToggle = document.getElementById('mobileToggle');
-        const mobileSidebar = document.getElementById('mobileSidebar');
-        const sidebarOverlay = document.getElementById('sidebarOverlay');
-
-        function toggleMenu() {
-            mobileToggle.classList.toggle('active');
-            mobileSidebar.classList.toggle('active');
-            sidebarOverlay.classList.toggle('active');
-            document.body.style.overflow = mobileSidebar.classList.contains('active') ? 'hidden' : '';
-        }
-
-        function closeMenu() {
-            mobileToggle.classList.remove('active');
-            mobileSidebar.classList.remove('active');
-            sidebarOverlay.classList.remove('active');
-            document.body.style.overflow = '';
-        }
-
-        mobileToggle.addEventListener('click', toggleMenu);
-        sidebarOverlay.addEventListener('click', closeMenu);
-        document.querySelectorAll('.mobile-menu a, .mobile-cta').forEach(link => {
-            link.addEventListener('click', closeMenu);
-        });
-
-        // CAROUSEL
-        const slides = document.querySelectorAll('.slide');
-        const prevBtn = document.getElementById('prevArrow');
-        const nextBtn = document.getElementById('nextArrow');
-        const sliderNav = document.querySelector('.slider-nav');
-        let currentSlide = 0;
-        let autoSlideInterval;
-        let hasLoadedOnce = false;
-
-        function showSlide(index) {
-            slides.forEach((slide, i) => {
-                slide.classList.remove('active');
-                if (hasLoadedOnce) {
-                    slide.classList.remove('first-load');
-                }
-                if (i === index) {
-                    slide.classList.add('active');
-                }
-            });
-        }
-
-        function nextSlide() {
-            currentSlide = (currentSlide + 1) % slides.length;
-            showSlide(currentSlide);
-        }
-
-        function prevSlide() {
-            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-            showSlide(currentSlide);
-        }
-
-        function startAutoSlide() {
-            autoSlideInterval = setInterval(nextSlide, 5000);
-        }
-
-        function resetAutoSlide() {
-            clearInterval(autoSlideInterval);
-            startAutoSlide();
-        }
-
-        nextBtn.addEventListener('click', function (e) {
-            e.preventDefault();
-            nextSlide();
-            resetAutoSlide();
-        });
-
-        prevBtn.addEventListener('click', function (e) {
-            e.preventDefault();
-            prevSlide();
-            resetAutoSlide();
-        });
-
-        startAutoSlide();
-
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'ArrowLeft') {
-                prevSlide();
-                resetAutoSlide();
-            }
-            if (e.key === 'ArrowRight') {
-                nextSlide();
-                resetAutoSlide();
-            }
-        });
-
-        let touchStartX = 0;
-        let touchEndX = 0;
-        const heroSlider = document.getElementById('heroSlider');
-
-        heroSlider.addEventListener('touchstart', (e) => {
-            touchStartX = e.changedTouches[0].screenX;
-        }, { passive: true });
-
-        heroSlider.addEventListener('touchend', (e) => {
-            touchEndX = e.changedTouches[0].screenX;
-            const swipeThreshold = 50;
-
-            if (touchStartX - touchEndX > swipeThreshold) {
-                nextSlide();
-                resetAutoSlide();
-            }
-            if (touchEndX - touchStartX > swipeThreshold) {
-                prevSlide();
-                resetAutoSlide();
-            }
-        }, { passive: true });
-
-        setTimeout(() => {
-            hasLoadedOnce = true;
-            const firstSlide = document.querySelector('.slide[data-slide="1"]');
-            if (firstSlide) {
-                firstSlide.classList.remove('first-load');
-            }
-            if (sliderNav) {
-                sliderNav.classList.remove('first-load');
-            }
-        }, 3000);
-
-        // NAVBAR SCROLL
-        window.addEventListener('scroll', () => {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.style.background = 'rgba(15, 23, 42, 1)';
-            } else {
-                navbar.style.background = 'rgba(15, 23, 42, 0.98)';
-            }
-        });
-
-        // SMOOTH SCROLL
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const href = this.getAttribute('href');
-                if (href !== '#' && href !== '#dropdown') {
-                    e.preventDefault();
-                    const target = document.querySelector(href);
-                    if (target) {
-                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }
-                }
-            });
-        });
-
-        // SCROLL ANIMATIONS
+        // Scroll Animation Observer
         const observerOptions = {
-            threshold: 0.15,
-            rootMargin: '0px 0px -50px 0px'
+            threshold: 0.2,
+            rootMargin: '0px 0px -100px 0px'
         };
 
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
+                    const delay = entry.target.dataset.delay || 0;
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, delay);
+                    observer.unobserve(entry.target);
                 }
             });
         }, observerOptions);
 
-        document.querySelectorAll('.fade-in-up, .scale-in').forEach(el => {
-            observer.observe(el);
+        // Observe all scroll-animate elements
+        document.addEventListener('DOMContentLoaded', () => {
+            const animatedElements = document.querySelectorAll('.scroll-animate');
+            animatedElements.forEach(el => observer.observe(el));
         });
-        // COUNTER ANIMATION FOR STATS (Works for both versions)
-        const counterObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const target = entry.target;
-                    const targetValue = parseInt(target.getAttribute('data-target'));
-                    const duration = 2000;
-                    const increment = targetValue / (duration / 16);
-                    let current = 0;
-
-                    const updateCounter = () => {
-                        current += increment;
-                        if (current < targetValue) {
-                            target.textContent = Math.floor(current);
-                            requestAnimationFrame(updateCounter);
-                        } else {
-                            target.textContent = targetValue;
-                        }
-                    };
-
-                    updateCounter();
-                    counterObserver.unobserve(target);
-                }
-            });
-        }, { threshold: 0.5 });
-
-        // Observe all counter elements
-        document.querySelectorAll('.stat-number-v1, .stat-number-v2').forEach(counter => {
-            counterObserver.observe(counter);
-        });
-
-        // FORM SUBMISSION
-        document.querySelector('.contact-form').addEventListener('submit', function (e) {
-            e.preventDefault();
-            alert('Thank you! Your message has been sent. We will contact you soon.');
-            this.reset();
-        });
-
-        // ADVANCED PARALLAX EFFECT FOR STATS SECTION
-        function initParallax() {
-            const statsSection = document.querySelector('.stats-section-v2');
-
-            if (!statsSection) return;
-
-            // Check if not mobile
-            if (window.innerWidth > 768) {
-                window.addEventListener('scroll', () => {
-                    const scrolled = window.pageYOffset;
-                    const sectionTop = statsSection.offsetTop;
-                    const sectionHeight = statsSection.offsetHeight;
-
-                    // Only apply parallax when section is in view
-                    if (scrolled > sectionTop - window.innerHeight && scrolled < sectionTop + sectionHeight) {
-                        const parallaxSpeed = 0.5;
-                        const yPos = -(scrolled - sectionTop) * parallaxSpeed;
-                        statsSection.style.backgroundPosition = `center ${yPos}px`;
-                    }
-                });
-            }
-        }
-
-        // Initialize on page load
-        document.addEventListener('DOMContentLoaded', initParallax);
-
-// ═══════════════════════════════════════════════════════════════
-// CAROUSEL & COMPARISON LOGIC
-// ═══════════════════════════════════════════════════════════════
-document.addEventListener('DOMContentLoaded', () => {
-    
-    // --- 1. COMPARISON SLIDER LOGIC ---
-    const viewers = document.querySelectorAll('.compare-viewer');
-    
-    viewers.forEach(viewer => {
-        let active = false;
-        const beforeImg = viewer.querySelector('.img-layer.before');
-        const handle = viewer.querySelector('.handle');
-
-        const move = (x) => {
-            const rect = viewer.getBoundingClientRect();
-            let position = x - rect.left;
-            if (position < 0) position = 0;
-            if (position > rect.width) position = rect.width;
-            const percentage = (position / rect.width) * 100;
-            beforeImg.style.width = percentage + "%";
-            handle.style.left = percentage + "%";
-        };
-
-        viewer.addEventListener('mousedown', () => active = true);
-        window.addEventListener('mouseup', () => active = false);
-        viewer.addEventListener('mousemove', (e) => { if (active) move(e.pageX); });
-        
-        viewer.addEventListener('touchstart', () => active = true);
-        window.addEventListener('touchend', () => active = false);
-        viewer.addEventListener('touchmove', (e) => { if (active) move(e.touches[0].pageX); });
-    });
-
-    // --- 2. CAROUSEL LOGIC ---
-    const slides = document.querySelectorAll('.trans-slide');
-    const dots = document.querySelectorAll('.dot');
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
-    let currentSlide = 0;
-
-    function showSlide(index) {
-        // Wrap around logic
-        if (index >= slides.length) currentSlide = 0;
-        else if (index < 0) currentSlide = slides.length - 1;
-        else currentSlide = index;
-
-        // Remove active class
-        slides.forEach(slide => slide.classList.remove('active'));
-        dots.forEach(dot => dot.classList.remove('active'));
-
-        // Add active class
-        slides[currentSlide].classList.add('active');
-        dots[currentSlide].classList.add('active');
-    }
-
-    nextBtn.addEventListener('click', () => showSlide(currentSlide + 1));
-    prevBtn.addEventListener('click', () => showSlide(currentSlide - 1));
-
-    dots.forEach(dot => {
-        dot.addEventListener('click', () => {
-            const index = parseInt(dot.getAttribute('data-slide'));
-            showSlide(index);
-        });
-    });
-
-});
-
     </script>
 </body>
-
 </html>
