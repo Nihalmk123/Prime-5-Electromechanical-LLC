@@ -885,6 +885,2399 @@
         grid-template-columns: 1fr;
     }
 }
+/* Corporate About Us - Executive Level */
+.corporate-about {
+    padding: 120px 0;
+    background: linear-gradient(180deg, #ffffff 0%, #fafaf8 100%);
+    position: relative;
+}
+
+.corporate-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 4rem;
+}
+
+/* Section Header - Centered Executive Style */
+.corporate-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 6rem;
+}
+
+.corporate-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #d4521c;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.corporate-title {
+    font-size: 3.8rem;
+    font-weight: 300;
+    color: #1a1a1a;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    margin-bottom: 1.5rem;
+}
+
+.corporate-title strong {
+    font-weight: 700;
+    color: #d4521c;
+}
+
+.corporate-subtitle {
+    font-size: 1.25rem;
+    line-height: 1.7;
+    color: #666;
+    font-weight: 400;
+}
+
+/* Two-Column Executive Layout */
+.executive-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 6rem;
+    margin-bottom: 6rem;
+    align-items: start;
+}
+
+/* Left: Mission Statement */
+.mission-content {
+    padding-right: 2rem;
+}
+
+.mission-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 2rem;
+    line-height: 1.3;
+}
+
+.mission-text {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: #4a4a4a;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+.mission-signature {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid #e5e5e5;
+}
+
+.signature-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 0.3rem;
+}
+
+.signature-title {
+    font-size: 0.95rem;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Right: Key Metrics Box */
+.metrics-panel {
+    background: #ffffff;
+    padding: 3rem;
+    border-radius: 8px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.05);
+}
+
+.metrics-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.metric-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.metric-row:last-child {
+    border-bottom: none;
+}
+
+.metric-label {
+    font-size: 0.95rem;
+    color: #666;
+    font-weight: 500;
+}
+
+.metric-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #d4521c;
+    line-height: 1;
+}
+
+/* Corporate Timeline - Horizontal Milestones */
+.corporate-timeline {
+    background: #ffffff;
+    padding: 5rem 4rem;
+    border-radius: 8px;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 6rem;
+}
+
+.timeline-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.timeline-header h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-header p {
+    font-size: 1.05rem;
+    color: #666;
+}
+
+/* Milestone Cards - 4 Columns */
+.milestone-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    position: relative;
+}
+
+/* Connecting Line */
+.milestone-grid::before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 10%;
+    right: 10%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #d4521c 20%, #d4521c 80%, transparent);
+    z-index: 0;
+}
+
+.milestone-card {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.milestone-year {
+    width: 60px;
+    height: 60px;
+    background: #d4521c;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin: 0 auto 1.5rem;
+    border: 4px solid #ffffff;
+    box-shadow: 0 8px 25px rgba(212, 82, 28, 0.25);
+}
+
+.milestone-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+}
+
+.milestone-desc {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Values Grid - 3 Pillars */
+.values-section {
+    margin-bottom: 6rem;
+}
+
+.values-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.values-header h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.value-card {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    transition: all 0.4s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+    border-color: #d4521c;
+}
+
+.value-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #fef9f5, #fff5e6);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin: 0 auto 1.5rem;
+}
+
+.value-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+.value-text {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #666;
+}
+
+/* Executive CTA - Minimalist */
+.executive-cta {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.cta-corporate {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    background: #1a1a1a;
+    color: white;
+    padding: 1.3rem 3rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta-corporate:hover {
+    background: #d4521c;
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(212, 82, 28, 0.3);
+}
+
+.cta-secondary {
+    background: transparent;
+    color: #1a1a1a;
+    border: 2px solid #1a1a1a;
+    margin-left: 1.5rem;
+}
+
+.cta-secondary:hover {
+    background: #1a1a1a;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .executive-grid {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .milestone-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .milestone-grid::before {
+        display: none;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .corporate-container {
+        padding: 0 2rem;
+    }
+
+    .corporate-title {
+        font-size: 2.5rem;
+    }
+
+    .corporate-about {
+        padding: 80px 0;
+    }
+
+    .corporate-timeline {
+        padding: 3rem 2rem;
+    }
+
+    .milestone-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .executive-cta {
+        padding: 2rem 0;
+    }
+
+    .cta-corporate {
+        width: 100%;
+        justify-content: center;
+        margin: 0 0 1rem 0 !important;
+    }
+
+    .cta-secondary {
+        margin-left: 0 !important;
+    }
+}
+/* Enhanced About Section - Modern Professional */
+.about-section {
+    padding: 100px 2rem;
+    background: linear-gradient(135deg, #fef9f5 0%, #fff5e6 100%);
+    overflow: hidden;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section Header - Enhanced Typography */
+.about-header {
+    text-align: center;
+    margin-bottom: 6rem;
+    position: relative;
+}
+
+.about-label {
+    display: inline-block;
+    font-size: 0.85rem;
+    color: #d4521c;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.about-label::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #d4521c, transparent);
+    margin: 0.8rem auto 0;
+}
+
+.about-main-title {
+    font-size: 3.8rem;
+    color: #1a1a1a;
+    font-weight: 800;
+    letter-spacing: -2px;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.about-main-title .highlight {
+    background: linear-gradient(135deg, #d4521c, #ff8c5a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-intro {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 750px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+/* Hero Image Banner - Full Width */
+.about-hero-visual {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 6rem;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.15);
+}
+
+.about-hero-visual::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(212, 82, 28, 0.1), rgba(255, 140, 90, 0.15));
+    z-index: 1;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Floating Stats Overlay on Image */
+.hero-stats-overlay {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    z-index: 2;
+    width: 90%;
+    max-width: 1000px;
+}
+
+.stat-card-overlay {
+    background: white;
+    padding: 2rem 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: all 0.4s ease;
+    border: 1px solid rgba(212, 82, 28, 0.1);
+}
+
+.stat-card-overlay:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 60px rgba(212, 82, 28, 0.25);
+    border-color: #d4521c;
+}
+
+.stat-card-overlay h3 {
+    font-size: 2.8rem;
+    color: #d4521c;
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.stat-card-overlay p {
+    font-size: 0.95rem;
+    color: #666;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Mission Statement - Full Width Card */
+.mission-statement {
+    background: white;
+    padding: 5rem 4rem;
+    border-radius: 30px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    margin: 6rem 0 6rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.mission-statement::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 100%;
+    background: linear-gradient(180deg, #d4521c, #ff8c5a);
+}
+
+.mission-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.mission-text-content {
+    padding-right: 2rem;
+}
+
+.mission-tag {
+    display: inline-block;
+    background: linear-gradient(135deg, #d4521c, #ff6b35);
+    color: white;
+    padding: 0.6rem 1.5rem;
+    border-radius: 25px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 20px rgba(212, 82, 28, 0.3);
+}
+
+.mission-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 2rem;
+    line-height: 1.3;
+}
+
+.mission-text {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: #4a4a4a;
+    margin-bottom: 1.8rem;
+}
+
+/* CEO Quote Card */
+.ceo-quote-card {
+    background: linear-gradient(135deg, #fef9f5, #fff5e6);
+    padding: 3rem;
+    border-radius: 20px;
+    border-left: 4px solid #d4521c;
+    position: relative;
+}
+
+.quote-icon {
+    font-size: 4rem;
+    color: rgba(212, 82, 28, 0.15);
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.quote-text {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #333;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+.quote-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid rgba(212, 82, 28, 0.2);
+}
+
+.author-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #d4521c, #ff6b35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 700;
+}
+
+.author-info h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 0.3rem;
+}
+
+.author-info p {
+    font-size: 0.9rem;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Values Grid - Three Column */
+.values-showcase {
+    margin: 6rem 0;
+}
+
+.values-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.values-header h3 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+.values-header p {
+    font-size: 1.15rem;
+    color: #666;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+
+.value-box {
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 25px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: all 0.4s ease;
+    border: 2px solid transparent;
+}
+
+.value-box:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 25px 70px rgba(212, 82, 28, 0.2);
+    border-color: #d4521c;
+}
+
+.value-icon {
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(135deg, #fef9f5, #fff5e6);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    margin: 0 auto 1.5rem;
+    transition: all 0.4s ease;
+}
+
+.value-box:hover .value-icon {
+    background: linear-gradient(135deg, #d4521c, #ff6b35);
+    transform: scale(1.1) rotate(5deg);
+}
+
+.value-box h4 {
+    font-size: 1.4rem;
+    color: #1a1a1a;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.value-box p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #666;
+}
+
+/* CTA Section - Enhanced */
+.about-cta {
+    text-align: center;
+    padding: 5rem 3rem;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    margin-top: 4rem;
+}
+
+.cta-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+.cta-description {
+    font-size: 1.15rem;
+    color: #666;
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Enhanced Button Styles */
+.btn-primary, .btn-secondary {
+    padding: 1.3rem 3rem;
+    font-size: 1.05rem;
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    border: 2px solid transparent;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #d4521c, #ff6b35);
+    color: white;
+    border-color: #d4521c;
+    box-shadow: 0 10px 30px rgba(212, 82, 28, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 20px 50px rgba(212, 82, 28, 0.4);
+}
+
+.btn-secondary {
+    background: white;
+    color: #d4521c;
+    border-color: #d4521c;
+}
+
+.btn-secondary:hover {
+    background: #d4521c;
+    color: white;
+    transform: translateY(-5px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .mission-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .mission-text-content {
+        padding-right: 0;
+    }
+
+    .hero-stats-overlay {
+        grid-template-columns: repeat(2, 1fr);
+        width: 95%;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        padding: 80px 1.5rem;
+    }
+
+    .about-main-title {
+        font-size: 2.8rem;
+    }
+
+    .about-hero-visual {
+        height: 350px;
+        border-radius: 20px;
+    }
+
+    .hero-stats-overlay {
+        position: relative;
+        bottom: 0;
+        transform: none;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+
+    .stat-card-overlay {
+        padding: 1.5rem 1rem;
+    }
+
+    .stat-card-overlay h3 {
+        font-size: 2.2rem;
+    }
+
+    .mission-statement {
+        padding: 3rem 2rem;
+    }
+
+    .mission-title {
+        font-size: 2rem;
+    }
+
+    .mission-text {
+        font-size: 1.05rem;
+    }
+
+    .ceo-quote-card {
+        padding: 2rem;
+    }
+
+    .values-header h3 {
+        font-size: 2.2rem;
+    }
+
+    .value-box {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .about-cta {
+        padding: 3rem 2rem;
+    }
+
+    .cta-title {
+        font-size: 2rem;
+    }
+
+    .about-cta-buttons {
+        flex-direction: column;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 100%;
+    }
+}
+/* Hero Image Section - Auto Slideshow */
+.about-hero-visual {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 3rem;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.15);
+}
+
+/* Slideshow Container */
+.hero-slideshow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Individual Slides */
+.hero-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    animation: slideshow 25s infinite;
+}
+
+.hero-slide:nth-child(1) { animation-delay: 0s; }
+.hero-slide:nth-child(2) { animation-delay: 5s; }
+.hero-slide:nth-child(3) { animation-delay: 10s; }
+.hero-slide:nth-child(4) { animation-delay: 15s; }
+.hero-slide:nth-child(5) { animation-delay: 20s; }
+
+@keyframes slideshow {
+    0% { opacity: 0; }
+    4% { opacity: 1; }
+    20% { opacity: 1; }
+    24% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/* Hero Image with Zoom Effect */
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: kenBurnsZoom 25s infinite;
+}
+
+.hero-slide:nth-child(1) .hero-image { animation-delay: 0s; }
+.hero-slide:nth-child(2) .hero-image { animation-delay: 5s; }
+.hero-slide:nth-child(3) .hero-image { animation-delay: 10s; }
+.hero-slide:nth-child(4) .hero-image { animation-delay: 15s; }
+.hero-slide:nth-child(5) .hero-image { animation-delay: 20s; }
+
+@keyframes kenBurnsZoom {
+    0% { transform: scale(1); }
+    4% { transform: scale(1); }
+    20% { transform: scale(1.08); }
+    24% { transform: scale(1.08); }
+    100% { transform: scale(1.08); }
+}
+
+/* Optional: Gradient Overlay for Better Text Readability */
+.hero-slide::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(212, 82, 28, 0.05), rgba(255, 140, 90, 0.08));
+    z-index: 1;
+}
+
+/* Stats Grid Below Image - Matches Your Theme */
+.stats-showcase {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+.stat-card {
+    background: white;
+    padding: 2.5rem 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(212, 82, 28, 0.2);
+}
+
+.stat-card h3 {
+    font-size: 3rem;
+    color: #d4521c;
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.stat-card p {
+    font-size: 0.95rem;
+    color: #666;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-hero-visual {
+        height: 350px;
+        border-radius: 20px;
+    }
+
+    .stats-showcase {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .stat-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .stat-card h3 {
+        font-size: 2.5rem;
+    }
+}
+/* About Section - Essential Styles Only */
+.about-section {
+    padding: 100px 2rem;
+    background: linear-gradient(135deg, #fef9f5 0%, #fff5e6 100%);
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.about-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.about-label {
+    display: inline-block;
+    font-size: 0.85rem;
+    color: #d4521c;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.about-main-title {
+    font-size: 3.5rem;
+    color: #1a1a1a;
+    font-weight: 800;
+    letter-spacing: -2px;
+    margin-bottom: 1.5rem;
+}
+
+.about-main-title .highlight {
+    background: linear-gradient(135deg, #d4521c, #ff8c5a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-intro {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 750px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Hero Image with Slideshow - Increased Height */
+.about-hero-visual {
+    position: relative;
+    width: 100%;
+    height: 550px; /* Increased from 500px */
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.15);
+}
+
+/* Animated Shine Effect Behind */
+.about-hero-visual::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        transparent 30%,
+        rgba(255, 255, 255, 0.3) 50%,
+        transparent 70%
+    );
+    animation: shine 3s infinite;
+    z-index: 2;
+    pointer-events: none;
+}
+
+@keyframes shine {
+    0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+    100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+}
+
+/* Slideshow Container */
+.hero-slideshow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Individual Slides */
+.hero-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    animation: slideshow 25s infinite;
+}
+
+.hero-slide:nth-child(1) { animation-delay: 0s; }
+.hero-slide:nth-child(2) { animation-delay: 5s; }
+.hero-slide:nth-child(3) { animation-delay: 10s; }
+.hero-slide:nth-child(4) { animation-delay: 15s; }
+.hero-slide:nth-child(5) { animation-delay: 20s; }
+
+@keyframes slideshow {
+    0% { opacity: 0; }
+    4% { opacity: 1; }
+    20% { opacity: 1; }
+    24% { opacity: 0; }
+}
+
+/* Hero Image with Zoom */
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: kenBurnsZoom 25s infinite;
+}
+
+.hero-slide:nth-child(1) .hero-image { animation-delay: 0s; }
+.hero-slide:nth-child(2) .hero-image { animation-delay: 5s; }
+.hero-slide:nth-child(3) .hero-image { animation-delay: 10s; }
+.hero-slide:nth-child(4) .hero-image { animation-delay: 15s; }
+.hero-slide:nth-child(5) .hero-image { animation-delay: 20s; }
+
+@keyframes kenBurnsZoom {
+    0% { transform: scale(1); }
+    4% { transform: scale(1); }
+    20% { transform: scale(1.08); }
+    24% { transform: scale(1.08); }
+}
+
+/* Text Overlay on Image */
+.slide-text-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 3rem;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0.4) 50%,
+        transparent 100%
+    );
+    z-index: 3;
+    color: white;
+}
+
+.slide-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0.8rem;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.slide-description {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    max-width: 700px;
+    opacity: 0.95;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 80px 1.5rem;
+    }
+
+    .about-main-title {
+        font-size: 2.5rem;
+    }
+
+    .about-hero-visual {
+        height: 450px; /* Adjusted for mobile */
+        border-radius: 20px;
+    }
+
+    .slide-text-overlay {
+        padding: 2rem 1.5rem;
+    }
+
+    .slide-title {
+        font-size: 1.8rem;
+    }
+
+    .slide-description {
+        font-size: 1rem;
+    }
+}
+/* Product Carousel Section */
+.products-carousel-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #fef9f5 0%, #fff5e6 100%);
+    overflow: hidden;
+}
+
+.carousel-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Section Header */
+.carousel-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.carousel-label {
+    display: inline-block;
+    font-size: 0.85rem;
+    color: #d4521c;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.carousel-title {
+    font-size: 3.5rem;
+    color: #1a1a1a;
+    font-weight: 800;
+    letter-spacing: -2px;
+    margin-bottom: 1.5rem;
+}
+
+.carousel-title .highlight {
+    background: linear-gradient(135deg, #d4521c, #ff8c5a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Horizontal Scroll Container - Pure CSS */
+.carousel-wrapper {
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #d4521c #f5f5f5;
+    padding-bottom: 2rem;
+}
+
+/* Webkit Scrollbar Styling */
+.carousel-wrapper::-webkit-scrollbar {
+    height: 8px;
+}
+
+.carousel-wrapper::-webkit-scrollbar-track {
+    background: #f5f5f5;
+    border-radius: 10px;
+}
+
+.carousel-wrapper::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #d4521c, #ff8c5a);
+    border-radius: 10px;
+}
+
+.carousel-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #d4521c;
+}
+
+/* Products Track */
+.carousel-track {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+/* 3D Flip Card */
+.product-flip-card {
+    flex: 0 0 380px;
+    height: 550px;
+    perspective: 1000px;
+    position: relative;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.product-flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Card Faces */
+.flip-card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+}
+
+/* Front Face */
+.flip-card-front {
+    background: white;
+}
+
+/* Back Face */
+.flip-card-back {
+    background: linear-gradient(135deg, #d4521c 0%, #ff6b35 100%);
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2.5rem;
+    color: white;
+}
+
+/* Product Image Area - BIGGER */
+.product-img-area {
+    position: relative;
+    height: 350px;
+    background: linear-gradient(135deg, #fef9f5, #fff5e6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-img {
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+    filter: drop-shadow(0 15px 40px rgba(0, 0, 0, 0.15));
+    transition: transform 0.4s ease;
+}
+
+.product-flip-card:hover .product-img {
+    transform: scale(1.05);
+}
+
+/* Badge */
+.product-badge {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    background: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.badge-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #27ae60;
+}
+
+.badge-new {
+    background: #d4521c;
+    color: white;
+}
+
+/* Product Info */
+.product-info {
+    padding: 2rem 2rem 2.5rem;
+}
+
+.product-category {
+    font-size: 0.85rem;
+    color: #d4521c;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+
+.product-name {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.product-desc {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+/* Product Features */
+.product-features {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.feature-tag {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+    padding: 0.5rem 1rem;
+    background: #f9f9f9;
+    border-radius: 15px;
+}
+
+/* Shop Now Button */
+.shop-now-btn {
+    width: 100%;
+    background: linear-gradient(135deg, #d4521c, #ff6b35);
+    color: white;
+    padding: 1.1rem;
+    border-radius: 25px;
+    border: none;
+    font-weight: 700;
+    font-size: 1.05rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(212, 82, 28, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.shop-now-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(212, 82, 28, 0.4);
+}
+
+/* Back Face Content - Better Alignment */
+.back-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.back-title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.back-features-list {
+    list-style: none;
+    margin-bottom: auto;
+}
+
+.back-features-list li {
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.05rem;
+}
+
+.back-features-list li::before {
+    content: '✓';
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* Nutrition Box */
+.nutrition-box {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    backdrop-filter: blur(10px);
+}
+
+.nutrition-box h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.nutrition-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+    font-size: 0.95rem;
+}
+
+.nutrition-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.6rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Back CTA */
+.back-shop-btn {
+    width: 100%;
+    background: white;
+    color: #d4521c;
+    padding: 1.2rem;
+    border-radius: 25px;
+    border: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.back-shop-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
+}
+
+/* Scroll Hint */
+.scroll-hint {
+    text-align: center;
+    margin-top: 2rem;
+    color: #999;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.scroll-hint::before,
+.scroll-hint::after {
+    content: '→';
+    font-size: 1.2rem;
+    color: #d4521c;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .carousel-title {
+        font-size: 2.5rem;
+    }
+
+    .product-flip-card {
+        flex: 0 0 320px;
+        height: 520px;
+    }
+
+    .product-img-area {
+        height: 300px;
+    }
+
+    .product-name {
+        font-size: 1.4rem;
+    }
+
+    .back-title {
+        font-size: 1.7rem;
+    }
+}
+/* Footer Section */
+.footer-section {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decorative Background Pattern */
+.footer-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="footer-grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(212,82,28,0.05)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23footer-grid)"/></svg>');
+    opacity: 0.3;
+}
+
+/* Newsletter Section - Top Orange Band */
+.footer-newsletter {
+    background: linear-gradient(135deg, #d4521c 0%, #ff6b35 100%);
+    padding: 4rem 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.newsletter-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.newsletter-content h3 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.newsletter-content p {
+    font-size: 1.1rem;
+    opacity: 0.95;
+}
+
+/* Newsletter Form */
+.newsletter-form {
+    display: flex;
+    gap: 1rem;
+}
+
+.newsletter-input {
+    flex: 1;
+    padding: 1.2rem 1.5rem;
+    border-radius: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.newsletter-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.newsletter-input:focus {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: white;
+}
+
+.newsletter-btn {
+    padding: 1.2rem 3rem;
+    background: white;
+    color: #d4521c;
+    border: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.newsletter-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
+}
+
+/* Main Footer Content */
+.footer-main {
+    padding: 5rem 2rem 3rem;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1.5fr;
+    gap: 3rem;
+}
+
+/* Brand Column */
+.footer-brand {
+    padding-right: 2rem;
+}
+
+.footer-logo {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.footer-logo-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #d4521c, #ff6b35);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.footer-tagline {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 2rem;
+}
+
+/* Social Links */
+.footer-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-link {
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.social-link:hover {
+    background: linear-gradient(135deg, #d4521c, #ff6b35);
+    transform: translateY(-3px);
+    border-color: transparent;
+}
+
+/* Footer Columns */
+.footer-column h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: white;
+    position: relative;
+    padding-bottom: 0.8rem;
+}
+
+.footer-column h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background: linear-gradient(90deg, #d4521c, #ff8c5a);
+    border-radius: 2px;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.footer-links li a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.footer-links li a:hover {
+    color: #ff8c5a;
+    transform: translateX(5px);
+}
+
+/* Contact Info */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.contact-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.contact-icon {
+    width: 40px;
+    height: 40px;
+    background: rgba(212, 82, 28, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    color: #ff8c5a;
+    flex-shrink: 0;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 2rem 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-bottom-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-copyright {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+}
+
+.footer-copyright a {
+    color: #ff8c5a;
+    text-decoration: none;
+}
+
+.footer-legal {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-legal a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-legal a:hover {
+    color: #ff8c5a;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .newsletter-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .newsletter-form {
+        justify-content: center;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-newsletter {
+        padding: 3rem 1.5rem;
+    }
+
+    .newsletter-content h3 {
+        font-size: 2rem;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-btn {
+        width: 100%;
+    }
+
+    .footer-main {
+        padding: 3rem 1.5rem 2rem;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .footer-brand {
+        text-align: center;
+    }
+
+    .footer-column h4 {
+        text-align: center;
+    }
+
+    .footer-column h4::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-links {
+        align-items: center;
+    }
+
+    .contact-info {
+        align-items: center;
+    }
+
+    .footer-bottom-container {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .footer-legal {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+/* Product to Plate Section - Adjusted Heights */
+.product-showcase-section {
+    padding: 100px 2rem;
+    background: linear-gradient(135deg, #fef9f5 0%, #fff5e6 100%);
+}
+
+.showcase-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section Header */
+.showcase-header {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.showcase-label {
+    display: inline-block;
+    font-size: 0.85rem;
+    color: #d4521c;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.showcase-title {
+    font-size: 3.8rem;
+    color: #1a1a1a;
+    font-weight: 800;
+    letter-spacing: -2px;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.showcase-title .highlight {
+    background: linear-gradient(135deg, #d4521c, #ff8c5a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.showcase-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Single Split Card - REDUCED HEIGHT */
+.showcase-card {
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.showcase-card:hover {
+    box-shadow: 0 35px 100px rgba(212, 82, 28, 0.2);
+}
+
+/* Grid Split - REDUCED HEIGHT */
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    min-height: 480px;
+}
+
+/* Vertical Divider */
+.card-divider {
+    position: absolute;
+    left: 50%;
+    top: 8%;
+    bottom: 8%;
+    width: 3px;
+    background: linear-gradient(180deg, transparent, #d4521c, transparent);
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.divider-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    background: white;
+    border: 3px solid #d4521c;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #d4521c;
+    font-weight: 700;
+    box-shadow: 0 8px 30px rgba(212, 82, 28, 0.25);
+}
+
+/* Panel Styling - REDUCED PADDING */
+.card-panel {
+    padding: 3rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Panel Title - SMALLER */
+.panel-title {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.panel-title .accent {
+    color: #d4521c;
+}
+
+/* Product Package - SAME SIZE AS DISH */
+.product-display {
+    width: 100%;
+    max-width: 320px;
+    height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 20px 60px rgba(0, 0, 0, 0.15));
+    transition: transform 0.6s ease;
+}
+
+.card-panel:hover .product-image {
+    transform: scale(1.08) rotate(-3deg);
+}
+
+/* Cooked Dish - SAME SIZE AS PACKAGE */
+.dish-display {
+    width: 100%;
+    max-width: 320px;
+    height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dish-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    transition: transform 0.6s ease;
+}
+
+.card-panel:hover .dish-image {
+    transform: scale(1.08) rotate(3deg);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .card-divider {
+        left: 8%;
+        right: 8%;
+        top: 50%;
+        bottom: auto;
+        width: auto;
+        height: 3px;
+        background: linear-gradient(90deg, transparent, #d4521c, transparent);
+    }
+
+    .divider-icon {
+        transform: translate(-50%, -50%) rotate(90deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .product-showcase-section {
+        padding: 80px 1.5rem;
+    }
+
+    .showcase-title {
+        font-size: 2.5rem;
+    }
+
+    .card-grid {
+        min-height: auto;
+    }
+
+    .card-panel {
+        padding: 2.5rem 2rem;
+    }
+
+    .panel-title {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .product-display,
+    .dish-display {
+        max-width: 280px;
+        height: 320px;
+    }
+}
+/* Product to Plate Section - Adjusted Heights */
+.product-showcase-section {
+    padding: 100px 2rem;
+    background: linear-gradient(135deg, #fef9f5 0%, #fff5e6 100%);
+}
+
+.showcase-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section Header */
+.showcase-header {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.showcase-label {
+    display: inline-block;
+    font-size: 0.85rem;
+    color: #d4521c;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.showcase-title {
+    font-size: 3.8rem;
+    color: #1a1a1a;
+    font-weight: 800;
+    letter-spacing: -2px;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.showcase-title .highlight {
+    background: linear-gradient(135deg, #d4521c, #ff8c5a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.showcase-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Single Split Card - STRONGER ORANGE SHADOW */
+.showcase-card {
+    background: white;
+    border-radius: 30px;
+    box-shadow: 
+        0 25px 80px rgba(0, 0, 0, 0.1),
+        0 0 0 1px rgba(212, 82, 28, 0.1),
+        0 12px 50px rgba(212, 82, 28, 0.25),
+        0 0 80px rgba(212, 82, 28, 0.15);
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.showcase-card:hover {
+    box-shadow: 
+        0 35px 100px rgba(0, 0, 0, 0.15),
+        0 0 0 1px rgba(212, 82, 28, 0.2),
+        0 20px 70px rgba(212, 82, 28, 0.4),
+        0 0 100px rgba(212, 82, 28, 0.25);
+    transform: translateY(-8px);
+}
+
+/* Grid Split */
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    min-height: 480px;
+}
+
+/* Vertical Divider */
+.card-divider {
+    position: absolute;
+    left: 50%;
+    top: 8%;
+    bottom: 8%;
+    width: 3px;
+    background: linear-gradient(180deg, transparent, #d4521c, transparent);
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.divider-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    background: white;
+    border: 3px solid #d4521c;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #d4521c;
+    font-weight: 700;
+    box-shadow: 0 8px 30px rgba(212, 82, 28, 0.25);
+}
+
+/* Panel Styling */
+.card-panel {
+    padding: 3rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Panel Title */
+.panel-title {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.panel-title .accent {
+    color: #d4521c;
+}
+
+/* Product Package - SAME SIZE AS DISH */
+.product-display {
+    width: 100%;
+    max-width: 320px;
+    height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 20px 60px rgba(0, 0, 0, 0.15));
+    transition: transform 0.6s ease;
+}
+
+.card-panel:hover .product-image {
+    transform: scale(1.08) rotate(-3deg);
+}
+
+/* Cooked Dish - SAME SIZE AS PACKAGE */
+.dish-display {
+    width: 100%;
+    max-width: 320px;
+    height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dish-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    transition: transform 0.6s ease;
+}
+
+.card-panel:hover .dish-image {
+    transform: scale(1.08) rotate(3deg);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .card-divider {
+        left: 8%;
+        right: 8%;
+        top: 50%;
+        bottom: auto;
+        width: auto;
+        height: 3px;
+        background: linear-gradient(90deg, transparent, #d4521c, transparent);
+    }
+
+    .divider-icon {
+        transform: translate(-50%, -50%) rotate(90deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .product-showcase-section {
+        padding: 80px 1.5rem;
+    }
+
+    .showcase-title {
+        font-size: 2.5rem;
+    }
+
+    .card-grid {
+        min-height: auto;
+    }
+
+    .card-panel {
+        padding: 2.5rem 2rem;
+    }
+
+    .panel-title {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .product-display,
+    .dish-display {
+        max-width: 280px;
+        height: 320px;
+    }
+}
+
     </style>
 </head>
 <body>
@@ -941,13 +3334,13 @@
                 <div class="product-showcase">
                     <div class="blob-background"></div>
                     <div class="product-main">
-                        <img src="rootistri.png" alt="Rootistri Pepe Bucato Pasta">
+                        <img src="image.png" alt="Rootistri Pepe Bucato Pasta">
                     </div>
                     <div class="product-side product-left">
-                        <img src="rootistri.png" alt="Rootistri Pasta">
+                        <img src="image.png" alt="Rootistri Pasta">
                     </div>
                     <div class="product-side product-right">
-                        <img src="rootistri.png" alt="Rootistri Pasta">
+                        <img src="image.png" alt="Rootistri Pasta">
                     </div>
                 </div>
             </div>
@@ -1039,7 +3432,7 @@
             <!-- Center Product -->
             <div class="center-product">
                 <div class="product-glow"></div>
-                <img src="rootistri.png" alt="Rootistri Pasta" class="hub-product">
+                <img src="image.png" alt="Rootistri Pasta" class="hub-product">
             </div>
 
             <!-- Connector Lines (SVG for straight dotted lines) -->
@@ -1102,6 +3495,632 @@
         </div>
     </div>
 </section>
+
+<!-- HERO IMAGE SLIDESHOW HTML -->
+<section class="about-section">
+    <div class="about-container">
+        
+        <!-- Header -->
+        <div class="about-header">
+            <span class="about-label">Our Story</span>
+            <h2 class="about-main-title">
+                Crafting Excellence Since <span class="highlight">2000</span>
+            </h2>
+            <p class="about-intro">
+                For over two decades, Rootistri has pioneered the revival of ancient Emmer wheat, 
+                transforming 5,000-year-old heritage into India's most trusted premium pasta brand.
+            </p>
+        </div>
+
+        <!-- Hero Image Slideshow with Text Overlay -->
+        <div class="about-hero-visual">
+            <div class="hero-slideshow">
+                
+                <!-- Slide 1 -->
+                <div class="hero-slide">
+                    <img src="our_mission_3.png" alt="Rootistri Pasta" class="hero-image">
+                    <div class="slide-text-overlay">
+                        <h3 class="slide-title">Ancient Grains, Modern Excellence</h3>
+                        <p class="slide-description">
+                            Reviving 5,000-year-old Emmer wheat traditions with cutting-edge cold-press technology.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="hero-slide">
+                    <img src="rootistri_mission_1.png" alt="Rootistri Production" class="hero-image">
+                    <div class="slide-text-overlay">
+                        <h3 class="slide-title">Farm to Table Excellence</h3>
+                        <p class="slide-description">
+                            Direct partnerships with 200+ certified organic farmers ensuring quality at every step.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="hero-slide">
+                    <img src="our_mission_4.png" alt="Premium Pasta" class="hero-image">
+                    <div class="slide-text-overlay">
+                        <h3 class="slide-title">Nutrition Without Compromise</h3>
+                        <p class="slide-description">
+                            3x more protein, lower glycemic index, and authentic Italian taste in every bite.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="hero-slide">
+                    <img src="rootistri_mission_2.png" alt="Artisan Craftsmanship" class="hero-image">
+                    <div class="slide-text-overlay">
+                        <h3 class="slide-title">Handcrafted Perfection</h3>
+                        <p class="slide-description">
+                            Every batch crafted with obsessive attention to detail by master pasta artisans.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="hero-slide">
+                    <img src="rootistri_mission_1.png" alt="Quality Assurance" class="hero-image">
+                    <div class="slide-text-overlay">
+                        <h3 class="slide-title">Trusted by 50,000+ Families</h3>
+                        <p class="slide-description">
+                            98% customer satisfaction through uncompromising quality and authentic taste.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+    </div>
+</section>
+<section class="products-carousel-section">
+    <div class="carousel-container">
+        
+        <!-- Section Header -->
+        <div class="carousel-header">
+            <span class="carousel-label">Our Collection</span>
+            <h2 class="carousel-title">
+                Premium <span class="highlight">Pasta Range</span>
+            </h2>
+        </div>
+
+        <!-- Horizontal Scroll Carousel -->
+        <div class="carousel-wrapper">
+            <div class="carousel-track">
+                
+                <!-- Product 1: Pepe Bucato -->
+                <div class="product-flip-card">
+                    <div class="flip-card-inner">
+                        <!-- Front -->
+                        <div class="flip-card-face flip-card-front">
+                            <div class="product-img-area">
+                                <div class="product-badge">
+                                    <span class="badge-dot"></span>
+                                    <span>VEG</span>
+                                </div>
+                                <img src="image.png" alt="Pepe Bucato" class="product-img">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-category">Classic Range</div>
+                                <h3 class="product-name">Pepe Bucato Pasta</h3>
+                                <p class="product-desc">
+                                    Perfect for biryani, pulao, cold salad, and soup. Pure cold-pressed Makkai pasta.
+                                </p>
+                                <div class="product-features">
+                                    <div class="feature-tag">🌾 Gluten Free</div>
+                                    <div class="feature-tag">💪 High Protein</div>
+                                </div>
+                                <button class="shop-now-btn">Shop Now</button>
+                            </div>
+                        </div>
+                        <!-- Back -->
+                        <div class="flip-card-face flip-card-back">
+                            <div class="back-content">
+                                <h3 class="back-title">Why Choose This?</h3>
+                                <ul class="back-features-list">
+                                    <li>Pure cold-pressed Makkai</li>
+                                    <li>Rich in antioxidants</li>
+                                    <li>Sustained energy release</li>
+                                    <li>Gluten-free ancient grain</li>
+                                </ul>
+                                <div class="nutrition-box">
+                                    <h4>Nutrition Per 100g</h4>
+                                    <div class="nutrition-grid">
+                                        <div class="nutrition-item">Protein: 12g</div>
+                                        <div class="nutrition-item">Fiber: 8g</div>
+                                        <div class="nutrition-item">Calories: 350</div>
+                                        <div class="nutrition-item">Fat: 2g</div>
+                                    </div>
+                                </div>
+                                <button class="back-shop-btn">Shop Now →</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2: Classic Penne -->
+                <div class="product-flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-face flip-card-front">
+                            <div class="product-img-area">
+                                <div class="product-badge">
+                                    <span class="badge-dot"></span>
+                                    <span>VEG</span>
+                                </div>
+                                <img src="image.png" alt="Classic Penne" class="product-img">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-category">Bestseller</div>
+                                <h3 class="product-name">Classic Penne Rigate</h3>
+                                <p class="product-desc">
+                                    Bronze-cut ridges for maximum sauce adhesion. Perfect for arrabbiata and pesto.
+                                </p>
+                                <div class="product-features">
+                                    <div class="feature-tag">⭐ Top Rated</div>
+                                    <div class="feature-tag">🔥 Bestseller</div>
+                                </div>
+                                <button class="shop-now-btn">Shop Now</button>
+                            </div>
+                        </div>
+                        <div class="flip-card-face flip-card-back">
+                            <div class="back-content">
+                                <h3 class="back-title">Why Choose This?</h3>
+                                <ul class="back-features-list">
+                                    <li>Bronze-cut texture</li>
+                                    <li>Perfect sauce grip</li>
+                                    <li>100% Emmer wheat</li>
+                                    <li>Slow-dried method</li>
+                                </ul>
+                                <div class="nutrition-box">
+                                    <h4>Nutrition Per 100g</h4>
+                                    <div class="nutrition-grid">
+                                        <div class="nutrition-item">Protein: 14g</div>
+                                        <div class="nutrition-item">Fiber: 6g</div>
+                                        <div class="nutrition-item">Calories: 340</div>
+                                        <div class="nutrition-item">Fat: 1.5g</div>
+                                    </div>
+                                </div>
+                                <button class="back-shop-btn">Shop Now →</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3: Whole Wheat Fusilli -->
+                <div class="product-flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-face flip-card-front">
+                            <div class="product-img-area">
+                                <div class="product-badge badge-new">
+                                    <span>NEW</span>
+                                </div>
+                                <img src="image.png" alt="Whole Wheat Fusilli" class="product-img">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-category">Health Special</div>
+                                <h3 class="product-name">Whole Wheat Fusilli</h3>
+                                <p class="product-desc">
+                                    100% whole grain with maximum fiber. Spiral shape traps every drop of sauce.
+                                </p>
+                                <div class="product-features">
+                                    <div class="feature-tag">❤️ Heart Healthy</div>
+                                    <div class="feature-tag">🌿 Organic</div>
+                                </div>
+                                <button class="shop-now-btn">Shop Now</button>
+                            </div>
+                        </div>
+                        <div class="flip-card-face flip-card-back">
+                            <div class="back-content">
+                                <h3 class="back-title">Why Choose This?</h3>
+                                <ul class="back-features-list">
+                                    <li>100% whole grain</li>
+                                    <li>Maximum fiber content</li>
+                                    <li>Low glycemic index</li>
+                                    <li>Diabetic-friendly</li>
+                                </ul>
+                                <div class="nutrition-box">
+                                    <h4>Nutrition Per 100g</h4>
+                                    <div class="nutrition-grid">
+                                        <div class="nutrition-item">Protein: 15g</div>
+                                        <div class="nutrition-item">Fiber: 10g</div>
+                                        <div class="nutrition-item">Calories: 330</div>
+                                        <div class="nutrition-item">Fat: 2g</div>
+                                    </div>
+                                </div>
+                                <button class="back-shop-btn">Shop Now →</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4: Spaghetti -->
+                <div class="product-flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-face flip-card-front">
+                            <div class="product-img-area">
+                                <div class="product-badge">
+                                    <span class="badge-dot"></span>
+                                    <span>VEG</span>
+                                </div>
+                                <img src="image.png" alt="Spaghetti" class="product-img">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-category">Classic Range</div>
+                                <h3 class="product-name">Classic Spaghetti</h3>
+                                <p class="product-desc">
+                                    Traditional Italian long pasta. Perfect for carbonara, aglio olio, and marinara.
+                                </p>
+                                <div class="product-features">
+                                    <div class="feature-tag">🇮🇹 Authentic</div>
+                                    <div class="feature-tag">⏱️ Quick Cook</div>
+                                </div>
+                                <button class="shop-now-btn">Shop Now</button>
+                            </div>
+                        </div>
+                        <div class="flip-card-face flip-card-back">
+                            <div class="back-content">
+                                <h3 class="back-title">Why Choose This?</h3>
+                                <ul class="back-features-list">
+                                    <li>Authentic Italian shape</li>
+                                    <li>Perfect al dente texture</li>
+                                    <li>Versatile for all sauces</li>
+                                    <li>Premium Emmer wheat</li>
+                                </ul>
+                                <div class="nutrition-box">
+                                    <h4>Nutrition Per 100g</h4>
+                                    <div class="nutrition-grid">
+                                        <div class="nutrition-item">Protein: 13g</div>
+                                        <div class="nutrition-item">Fiber: 7g</div>
+                                        <div class="nutrition-item">Calories: 345</div>
+                                        <div class="nutrition-item">Fat: 1.8g</div>
+                                    </div>
+                                </div>
+                                <button class="back-shop-btn">Shop Now →</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5: Farfalle -->
+                <div class="product-flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-face flip-card-front">
+                            <div class="product-img-area">
+                                <div class="product-badge">
+                                    <span class="badge-dot"></span>
+                                    <span>VEG</span>
+                                </div>
+                                <img src="image.png" alt="Farfalle" class="product-img">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-category">Specialty</div>
+                                <h3 class="product-name">Farfalle Bow Ties</h3>
+                                <p class="product-desc">
+                                    Elegant butterfly shape perfect for creamy sauces and pasta salads.
+                                </p>
+                                <div class="product-features">
+                                    <div class="feature-tag">🎨 Beautiful</div>
+                                    <div class="feature-tag">👨‍🍳 Chef Choice</div>
+                                </div>
+                                <button class="shop-now-btn">Shop Now</button>
+                            </div>
+                        </div>
+                        <div class="flip-card-face flip-card-back">
+                            <div class="back-content">
+                                <h3 class="back-title">Why Choose This?</h3>
+                                <ul class="back-features-list">
+                                    <li>Unique butterfly design</li>
+                                    <li>Holds sauces perfectly</li>
+                                    <li>Great for cold salads</li>
+                                    <li>Kid-friendly shape</li>
+                                </ul>
+                                <div class="nutrition-box">
+                                    <h4>Nutrition Per 100g</h4>
+                                    <div class="nutrition-grid">
+                                        <div class="nutrition-item">Protein: 13g</div>
+                                        <div class="nutrition-item">Fiber: 6.5g</div>
+                                        <div class="nutrition-item">Calories: 338</div>
+                                        <div class="nutrition-item">Fat: 1.6g</div>
+                                    </div>
+                                </div>
+                                <button class="back-shop-btn">Shop Now →</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6: Rigatoni -->
+                <div class="product-flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-face flip-card-front">
+                            <div class="product-img-area">
+                                <div class="product-badge">
+                                    <span class="badge-dot"></span>
+                                    <span>VEG</span>
+                                </div>
+                                <img src="image.png" alt="Rigatoni" class="product-img">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-category">Premium</div>
+                                <h3 class="product-name">Rigatoni Tubes</h3>
+                                <p class="product-desc">
+                                    Large ridged tubes that capture chunky sauces and meat perfectly.
+                                </p>
+                                <div class="product-features">
+                                    <div class="feature-tag">🍖 Hearty</div>
+                                    <div class="feature-tag">💯 Premium</div>
+                                </div>
+                                <button class="shop-now-btn">Shop Now</button>
+                            </div>
+                        </div>
+                        <div class="flip-card-face flip-card-back">
+                            <div class="back-content">
+                                <h3 class="back-title">Why Choose This?</h3>
+                                <ul class="back-features-list">
+                                    <li>Large tube shape</li>
+                                    <li>Deep ridges hold sauce</li>
+                                    <li>Perfect for baked dishes</li>
+                                    <li>Restaurant favorite</li>
+                                </ul>
+                                <div class="nutrition-box">
+                                    <h4>Nutrition Per 100g</h4>
+                                    <div class="nutrition-grid">
+                                        <div class="nutrition-item">Protein: 14g</div>
+                                        <div class="nutrition-item">Fiber: 7g</div>
+                                        <div class="nutrition-item">Calories: 342</div>
+                                        <div class="nutrition-item">Fat: 1.7g</div>
+                                    </div>
+                                </div>
+                                <button class="back-shop-btn">Shop Now →</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Scroll Hint -->
+        <div class="scroll-hint">Scroll to explore more</div>
+
+    </div>
+</section>
+<!-- HTML REMAINS THE SAME -->
+<section class="product-showcase-section">
+    <div class="showcase-container">
+        
+        <!-- Header -->
+        <div class="showcase-header">
+            <span class="showcase-label">Product Journey</span>
+            <h2 class="showcase-title">
+                From Package to <span class="highlight">Perfect Plate</span>
+            </h2>
+            <p class="showcase-subtitle">
+                Discover how Rootistri Pepe Bucato transforms into a delicious meal in just minutes.
+            </p>
+        </div>
+
+        <!-- Single Split Card -->
+        <div class="showcase-card">
+            <div class="card-grid">
+                
+                <!-- LEFT PANEL: Product Package -->
+                <div class="card-panel">
+                    <h3 class="panel-title">
+                        Your <span class="accent">Rootistri Pasta</span>
+                    </h3>
+                    
+                    <div class="product-display">
+                        <img src="image.png" alt="Rootistri Pepe Bucato Package" class="product-image">
+                    </div>
+                </div>
+
+                <!-- VERTICAL DIVIDER -->
+                <div class="card-divider">
+                    <div class="divider-icon">→</div>
+                </div>
+
+                <!-- RIGHT PANEL: Cooked Dish -->
+                <div class="card-panel">
+                    <h3 class="panel-title">
+                        Ready to <span class="accent">Serve</span>
+                    </h3>
+                    
+                    <div class="dish-display">
+                        <img src="packet_to_plate.png" alt="Cooked Pepe Bucato Pasta" class="dish-image">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- ABOUT US SECTION HTML -->
+<section class="about-section">
+    <div class="about-container">
+        
+        <!-- Header with Enhanced Typography -->
+        <div class="about-header">
+            <span class="about-label">Our Story</span>
+            <h2 class="about-main-title">
+                Crafting Excellence Since <span class="highlight">2000</span>
+            </h2>
+            <p class="about-intro">
+                For over two decades, Rootistri has pioneered the revival of ancient Emmer wheat, 
+                transforming 5,000-year-old heritage into India's most trusted premium pasta brand.
+            </p>
+        </div>
+
+
+        <!-- Mission Statement Card -->
+        <div class="mission-statement">
+            <div class="mission-grid">
+                <!-- Left: Mission Content -->
+                <div class="mission-text-content">
+                    <span class="mission-tag">Our Mission</span>
+                    <h3 class="mission-title">Redefining Pasta Through Ancient Wisdom</h3>
+                    <p class="mission-text">
+                        At Rootistri, we believe that the best nutrition comes from nature's time-tested grains. 
+                        Our proprietary cold-press methodology preserves 100% of Emmer wheat's natural nutrients, 
+                        delivering pasta that's 3x richer in protein with a lower glycemic index.
+                    </p>
+                    <p class="mission-text">
+                        Every batch represents our commitment to sustainable farming partnerships with 200+ certified 
+                        organic farmers, authentic Italian craftsmanship, and uncompromising quality control that 
+                        professional chefs and families trust across India.
+                    </p>
+                </div>
+
+                <!-- Right: CEO Quote -->
+                <div class="ceo-quote-card">
+                    <div class="quote-icon">"</div>
+                    <p class="quote-text">
+                        Our mission is to make ancient grain nutrition accessible to every Indian family 
+                        without compromising on the taste they love.
+                    </p>
+                    <div class="quote-author">
+                        <div class="author-avatar">SF</div>
+                        <div class="author-info">
+                            <h4>Sana Firdous</h4>
+                            <p>Founder & CEO</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Enhanced CTA -->
+        <div class="about-cta">
+            <h3 class="cta-title">Experience the Rootistri Difference</h3>
+            <p class="cta-description">
+                Discover our premium pasta collection or connect with our team to learn more 
+                about our sustainable farming practices and nutritional excellence.
+            </p>
+            <div class="about-cta-buttons">
+                <button class="btn-primary">Explore Our Products</button>
+                <button class="btn-secondary">Meet Our Team</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER SECTION -->
+<footer class="footer-section">
+    
+    <!-- Main Footer Content -->
+    <div class="footer-main">
+        <div class="footer-container">
+            
+            <!-- Brand Column -->
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <div class="footer-logo-icon">🌾</div>
+                    ROOTISTRI
+                </div>
+                <p class="footer-tagline">
+                    Pioneering ancient Emmer wheat revival since 2000. Premium artisan pasta 
+                    crafted with authentic Italian techniques and unwavering commitment to quality.
+                </p>
+                <div class="footer-social">
+                    <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                    <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                    <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                    <a href="#" class="social-link" aria-label="YouTube">📹</a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#products">Our Products</a></li>
+                    <li><a href="#story">Our Story</a></li>
+                    <li><a href="#recipes">Recipes</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                </ul>
+            </div>
+
+            <!-- Shop -->
+            <div class="footer-column">
+                <h4>Shop</h4>
+                <ul class="footer-links">
+                    <li><a href="#classic">Classic Pasta</a></li>
+                    <li><a href="#whole">Whole Wheat</a></li>
+                    <li><a href="#specialty">Specialty Range</a></li>
+                    <li><a href="#combo">Combo Packs</a></li>
+                    <li><a href="#gifting">Gift Hampers</a></li>
+                    <li><a href="#bulk">Bulk Orders</a></li>
+                </ul>
+            </div>
+
+            <!-- Support -->
+            <div class="footer-column">
+                <h4>Support</h4>
+                <ul class="footer-links">
+                    <li><a href="#faq">FAQs</a></li>
+                    <li><a href="#shipping">Shipping Info</a></li>
+                    <li><a href="#returns">Returns Policy</a></li>
+                    <li><a href="#track">Track Order</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#wholesale">Wholesale</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-column">
+                <h4>Get In Touch</h4>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            123 Pasta Lane, Artisan Quarter,<br>
+                            Bengaluru, Karnataka 560001
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            +91 98765 43210<br>
+                            Mon-Sat: 9AM - 6PM
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            hello@rootistri.com<br>
+                            support@rootistri.com
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <div class="footer-bottom-container">
+            <div class="footer-copyright">
+                © 2026 <a href="#">Rootistri</a>. All rights reserved. Crafted with ❤️ in India.
+            </div>
+            <div class="footer-legal">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#cookies">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+
+</footer>
     <script>
         // Scroll Animation Observer
         const observerOptions = {
